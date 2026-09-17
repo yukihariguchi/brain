@@ -18,7 +18,7 @@ AISAACJP。発行済 15,000株
 
 ## 用語
 
-- AISAACJP : aisaac の日本法人（正式名称は要確認）
+- AISAACJP : 株式会社アイザック（aisaac の日本法人）
 - AISAACSG : AISAAC LABS PTE. LTD.（aisaac のシンガポール法人）
 - AWSMSG : AWSM LAB PTE. LTD.（オーサムのシンガポール法人）
 
