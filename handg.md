@@ -9,15 +9,17 @@
 
 現在（2026-09-17）
 
-- 播口友紀 → H&G MANAGEMENT 100%
-- 播口友紀 → Harry&Gucci 100%
-- H&G MANAGEMENT と Harry&Gucci の間に資本関係はない
+- 播口友紀 → H&G SG 100%
+- 播口友紀 → H&G JP 100%
+- H&G SG と H&G JP の間に資本関係はない
 
 播口の日本出国後
 
-- 播口友紀 → H&G MANAGEMENT → Harry&Gucci 100% の2階建てに組み替える
+- 播口友紀 → H&G SG → H&G JP 100% の2階建てに組み替える
 - 出国時期は未定（要確認）
 
 ## 用語
-- H&G MANAGEMENT PTE. LTD. : シンガポールの資産管理会社
-- 株式会社Harry&Gucci : 日本の資産管理会社
+- H&G SG : H&G MANAGEMENT PTE. LTD.（シンガポールの資産管理会社）
+- H&G JP : 株式会社Harry&Gucci（日本の資産管理会社）
+
+会話・ドキュメントでは H&G SG / H&G JP で書くのを基本とする。正式名称は契約書・登記など正式名称が要るときだけ使う。
