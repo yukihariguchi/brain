@@ -2,7 +2,7 @@
 
 ## 資本構成（2026-09-17）
 
-発行済 15,000株
+AISAACJP。発行済 15,000株
 
 | 株主 | 株数 | 比率 |
 |---|---|---|
@@ -14,10 +14,11 @@
 
 ## 関連法人
 
-- AISAACSG: HGSG 50% / AWSMSG 50%。日本側（オーサム 68% / HGJP 27%）とは持分比率が違う
+- AISAACSG: HGSG 50% / AWSMSG 50%。AISAACJP（オーサム 68% / HGJP 27%）とは持分比率が違う
 
 ## 用語
 
+- AISAACJP : aisaac の日本法人（正式名称は要確認）
 - AISAACSG : AISAAC LABS PTE. LTD.（aisaac のシンガポール法人）
 - AWSMSG : AWSM LAB PTE. LTD.（オーサムのシンガポール法人）
 
