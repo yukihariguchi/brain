@@ -14,4 +14,4 @@
 
 ## 関連法人
 
-- AISAAC LABS PTE. LTD.（シンガポール）: HGSG 50%。残り 50% の株主は要確認
+- AISAAC LABS PTE. LTD.（シンガポール）: HGSG 50% / AWSM LAB PTE. LTD. 50%
