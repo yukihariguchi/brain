@@ -14,4 +14,11 @@
 
 ## 関連法人
 
-- AISAAC LABS PTE. LTD.（シンガポール）: HGSG 50% / AWSM LAB PTE. LTD. 50%
+- AISAACSG: HGSG 50% / AWSMSG 50%。日本側（オーサム 68% / HGJP 27%）とは持分比率が違う
+
+## 用語
+
+- AISAACSG : AISAAC LABS PTE. LTD.（aisaac のシンガポール法人）
+- AWSMSG : AWSM LAB PTE. LTD.（オーサムのシンガポール法人）
+
+略称は HG と同じ規則（社名 + SG / JP）で書く。

@@ -27,7 +27,7 @@ HGJP
 
 HGSG
 
-- AISAAC LABS PTE. LTD.（aisaac のシンガポール法人）: 50%
+- AISAACSG（AISAAC LABS PTE. LTD.、aisaac のシンガポール法人）: 50%。残り 50% は AWSMSG（オーサム側）
 
 ## 役割分担
 
