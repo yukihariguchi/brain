@@ -10,7 +10,7 @@ Hello の人事・採用・外部人材の前提。人材紹介以外のテー�
 
 - Drive（契約書一式）: https://drive.google.com/drive/folders/1xmOWYPLqiXGUz5maG7yafy5oL_izbsrM
 - Drive（基本契約のみ）: https://drive.google.com/drive/folders/1aTRr1Al6io-cLRyKZpWrxixyW8wlhn8K
-- Hello 雛形ドラフト（2026-09-18、弁護士確認前）: https://drive.google.com/file/d/19-n6Z1eNp9CIhOTVhI9300Bd_wICwShx/view
+- Hello 雛形ドラフト（2026-09-18、弁護士確認前）: https://drive.google.com/file/d/1NqSxsgEIAfEjrusrCb7N3ibQYJR1V5Ag/view
 - 4社とも準委任の仲介。CodeCast も同じスキーム（エンジニア↔CodeCast↔Hello）
 - 契約書は 2022〜2024 年分。生きている契約と Findy 申込書は要確認
 
@@ -39,7 +39,7 @@ Hello の人事・採用・外部人材の前提。人材紹介以外のテー�
 
 | 条項 | 骨子 | 効果 |
 |---|---|---|
-| 違約金を実損ベース | 残存個別契約期間の手数料相当額が上限 | 満了後の切替は残存ゼロ。下限を求められたら3ヶ月分まで |
+| 違約金を手数料ベース | 乙が得ていた手数料の3か月分が上限。乙は手数料額を証する資料を提示 | 委託料1年分（LT）や固定300万円（Hajimari）と比べ桁が下がる。手数料を開示させる効果もある |
 | 勧誘要件 | 甲が勧誘した場合に限る | 立証責任が向こうに移る |
 | 期間 | 終了後6ヶ月 | LT 3年・Hajimari 無期限を消す |
 | 乙側事由の除外 | 乙または再委託先の申し出で終了した場合は適用外 | 本人が辞意を出せば対象外 |
