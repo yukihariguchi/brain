@@ -10,7 +10,7 @@ Hello の人事・採用・外部人材の前提。人材紹介以外のテー�
 
 - Drive（契約書一式）: https://drive.google.com/drive/folders/1xmOWYPLqiXGUz5maG7yafy5oL_izbsrM
 - Drive（基本契約のみ）: https://drive.google.com/drive/folders/1aTRr1Al6io-cLRyKZpWrxixyW8wlhn8K
-- Hello 雛形 v3（2026-09-18、弁護士確認前）: https://docs.google.com/document/d/1ulRo5LyaAcHunFzg2haTrfdrdB5e1wsrmEZt5KP0vk0/edit
+- Hello 雛形（2026-09-18）: https://docs.google.com/document/d/1RX1ww6U65Wazj0DxexHdeYpzjobOGuFSDg4_gT-Gww0/edit
 
 ### 1. 4社の条件（2026-09-18）
 
@@ -57,7 +57,7 @@ Hello の人事・採用・外部人材の前提。人材紹介以外のテー�
 | Hajimari・BE | 雛形かそれに近い条件でなければ契約終了の方向。終了までは抑止のため少額の発注を残す |
 | 4社以外の新規 | Hello 雛形でなければ契約しない |
 
-#### 雛形 v3 の要点
+#### 雛形の要点
 
 禁止条項は消さず、法務が「調整」と読む条項を重ねて、切替時に請求できる額を下げる。
 
