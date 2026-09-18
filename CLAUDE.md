@@ -30,7 +30,8 @@ brain = Claude が読むための前提集。事実と骨格だけ置く。
 - H&G → handg.md
 - CodeCast → codecast.md
 - A2Z / Rise（同一会社）→ a2z-rise/
-  - 2事業の共通事項（会社の立て付け・体制・人材契約など）→ a2z-rise/ 直下（例: a2z-rise/a2z-rise.md, a2z-rise/hr.md）
+  - 2事業の共通事項（会社の立て付け・体制など）→ a2z-rise/ 直下（例: a2z-rise/a2z-rise.md）
+  - A2Z / Rise の HR（人事・採用・外部人材）→ a2z-rise/hr.md
   - A2Z 固有 → a2z-rise/a2z/a2z.md
   - Rise 固有 → a2z-rise/rise/rise.md
 - 決定の履歴 → decisions.md
