@@ -29,8 +29,10 @@ brain = Claude が読むための前提集。事実と骨格だけ置く。
 - aisaac → aisaac.md
 - H&G → handg.md
 - CodeCast → codecast.md
-- Rise → rise.md
-- A2Z → a2z.md
+- A2Z / Rise（同一会社）→ a2z-rise/
+  - 2事業の共通事項（会社の立て付け・体制・人材契約など）→ a2z-rise/ 直下（例: a2z-rise/a2z-rise.md, a2z-rise/hr.md）
+  - A2Z 固有 → a2z-rise/a2z/a2z.md
+  - Rise 固有 → a2z-rise/rise/rise.md
 - 決定の履歴 → decisions.md
 
 質問に関係するものだけ読む。全部読まない。
