@@ -10,6 +10,7 @@ Hello の人事・採用・外部人材の前提。人材紹介以外のテー�
 
 - Drive（契約書一式）: https://drive.google.com/drive/folders/1xmOWYPLqiXGUz5maG7yafy5oL_izbsrM
 - Drive（基本契約のみ）: https://drive.google.com/drive/folders/1aTRr1Al6io-cLRyKZpWrxixyW8wlhn8K
+- Hello 雛形ドラフト（2026-09-18、弁護士確認前）: https://drive.google.com/file/d/19-n6Z1eNp9CIhOTVhI9300Bd_wICwShx/view
 - 4社とも準委任の仲介。CodeCast も同じスキーム（エンジニア↔CodeCast↔Hello）
 - 契約書は 2022〜2024 年分。生きている契約と Findy 申込書は要確認
 
