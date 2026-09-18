@@ -10,7 +10,7 @@ Hello の人事・採用・外部人材の前提。人材紹介以外のテー�
 
 - Drive（契約書一式）: https://drive.google.com/drive/folders/1xmOWYPLqiXGUz5maG7yafy5oL_izbsrM
 - Drive（基本契約のみ）: https://drive.google.com/drive/folders/1aTRr1Al6io-cLRyKZpWrxixyW8wlhn8K
-- Hello 雛形 v3（2026-09-18、弁護士確認前）: Word https://drive.google.com/file/d/1FQNZg4POWwg9ucb09UBzLa0OqMl31dl0/view / Google ドキュメント https://docs.google.com/document/d/1ulRo5LyaAcHunFzg2haTrfdrdB5e1wsrmEZt5KP0vk0/edit
+- Hello 雛形 v3（2026-09-18、弁護士確認前、Google ドキュメント）: https://docs.google.com/document/d/1ulRo5LyaAcHunFzg2haTrfdrdB5e1wsrmEZt5KP0vk0/edit
 
 ### 4社の条件（2026-09-18）
 
