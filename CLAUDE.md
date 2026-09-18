@@ -24,7 +24,8 @@ brain = Claude が読むための前提集。事実と骨格だけ置く。
 ## ファイル
 
 - 判断基準・進め方の好み → me.md
-- Hello → hello.md
+- Hello → hello/hello.md
+- Hello の人材エージェント契約 → hello/hr.md
 - aisaac → aisaac.md
 - H&G → handg.md
 - CodeCast → codecast.md
