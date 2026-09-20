@@ -20,7 +20,7 @@
 
 - Haku: カウンター8席の懐石料理
 - Haku Shokudo: 44席の定食屋
-- Haku Patisserie: ケーキとベーカリー
+- Haku Bakery: ケーキとパン（2026-09-20 に Patisserie から Bakery に変更）
 
 ## 用語
 
