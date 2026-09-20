@@ -29,7 +29,8 @@ brain = Claude が読むための前提集。事実と骨格だけ置く。
 - Hello の人材エージェント契約 → hello/hr.md
 - aisaac → aisaac/aisaac.md
 - aisaac の人材エージェント契約 → aisaac/hr.md
-- H&G → handg.md
+- H&G → handg/handg.md
+- 株式会社白（Haku、HGJP が25%出資する飲食会社）→ handg/haku/haku.md
 - CodeCast → codecast.md
 - A2Z / Rise（同一会社）→ a2z-rise/
   - 2事業の共通事項（会社の立て付け・体制など）→ a2z-rise/ 直下（例: a2z-rise/a2z-rise.md）
