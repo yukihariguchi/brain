@@ -34,13 +34,26 @@ HP: https://hello.ai（以下「会社概要」「事業」「体制」「用語
 - SG 親会社の理由: 子会社株の売却益 0%（JP 約 30%）/ 外国子会社合算税制なし / HQ 自身の利益 17%（JP 約 30%）/ HGSG から見て国外財産で配当源泉 0%。配当の層に差はない
 - ヘッジファンド事業 HelloAlpha → hello/hello-alpha.md
 
-## 事業（2026-09-22、HP より）
+## 事業（2026-09-22）
+
+4事業。HelloDining の下に AutoReserve と Respo が入る（区分は播口による。HP は製品単位で掲載）。
+
+HelloDining（飲食店向け事業）
 
 - AutoReserve: AI によるレストラン予約サイト。AI が電話で飲食店を予約する。toC。日英のほか仏・伊・西・独に対応。autoreserve.com
 - Respo（Respo by AutoReserve）: 飲食店向けオールインワン（予約台帳・POS・セルフオーダー・決済）。toB。導入例に久丹、SAVOY 麻布十番、鮨 木場谷、山﨑。ぴかいちナビと連携
-- HelloX: 音声 AI の電話サービス。AI エージェント＋クラウド PBX の「AI クラウドフォン」。店舗からコンタクトセンターまで。hellovoice.ai
-- HelloPay: 決済代行。カード・Apple Pay・Google Pay・サブスク決済を API で提供。Respo 向けは RespoPay、端末レス決済。pay.hello.ai
-- HelloAlpha: ヘッジファンド事業（HP 未掲載）。hello/hello-alpha.md
+
+HelloX
+
+- 音声 AI の電話サービス。AI エージェント＋クラウド PBX の「AI クラウドフォン」。店舗からコンタクトセンターまで。hellovoice.ai
+
+HelloPay
+
+- 決済代行。カード・Apple Pay・Google Pay・サブスク決済を API で提供。Respo 向けは RespoPay、端末レス決済。pay.hello.ai
+
+HelloAlpha
+
+- ヘッジファンド事業（HP 未掲載）。hello/hello-alpha.md
 
 ## 体制（2026-09-22、HP より）
 
@@ -86,6 +99,7 @@ SO（2026-09-22）
 - Hello JP: 株式会社ハロー（日本、現親会社）
 - Hello SG: 2027年に作る予定のシンガポール親会社。正式名称は未定
 - Hello UK: Hello AI Limited（ロンドン）
+- HelloDining: 飲食店向け事業の総称。AutoReserve と Respo
 - AutoReserve / Respo / HelloX / HelloPay / RespoPay: 上記「事業」
 - HelloAlpha: ヘッジファンド事業
 - 運用部隊: AutoReserve・HelloX の電話オペレーションを担う 200人規模のチーム
