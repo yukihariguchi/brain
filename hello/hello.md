@@ -1,12 +1,16 @@
 # Hello
 
-HP: https://hello.ai（以下「会社概要」「事業」「体制」「用語」は 2026-09-22 に HP から転記）
+HP: https://hello.ai（法人の概要・事業の説明・体制・用語は 2026-09-22 に HP から転記）
 
-## 立て付け
+## 法人（会社）
 
-### 会社概要
+Hello は「法人」と「事業」を分けて捉える。法人は国ごとの箱で、事業は法人をまたいで動く。
 
-- 会社名: 株式会社ハロー（Hello, Inc.）
+### 現在（2026-09-19）
+
+親会社: 株式会社ハロー（Hello JP、日本）
+
+- 英名: Hello, Inc.
 - 設立: 2018年6月20日
 - 資本金: 1億円
 - 本社: 〒150-0013 東京都渋谷区恵比寿1-21-8 VORT恵比寿Ⅲ 2F
@@ -14,29 +18,32 @@ HP: https://hello.ai（以下「会社概要」「事業」「体制」「用語
 - タグライン: Goodbye past, Hello future.
 - ミッション: 社会通念や常識にとらわれず、他でもない自分たちのアイデアを信じ、まだ世の中にないものを生みだす
 
-### グループ構成（2026-09-19）
-
-親会社: 株式会社ハロー（日本）
-
 100%子会社:
-- イギリス: Hello AI Limited（434 St. Ann's Road, London, N15 3JH）
-- 韓国: 주식회사 헬로한국（9F-112, 7 Teheran-ro 5-gil, Gangnam-gu, Seoul）
-- 台湾: 哈囉台灣網路科技股份有限公司（臺北市中山區南京東路一段15號三樓）
+
+- Hello AI Limited（Hello UK、イギリス）: 434 St. Ann's Road, London, N15 3JH
+- 주식회사 헬로한국（Hello KR、韓国）: 9F-112, 7 Teheran-ro 5-gil, Gangnam-gu, Seoul
+- 哈囉台灣網路科技股份有限公司（Hello TW、台湾）: 臺北市中山區南京東路一段15號三樓
 
 代表: 親会社・3子会社とも播口友紀（Yuki Hariguchi）
 
 ### 予定（2026-09-22 方針）
 
-- 2027年: Hello SG（シンガポール）を親会社にする。Hello の株主は HGSG / AISAACSG / AWSMSG の SG 法人 3社になる予定。全員が SG 法人になった直後に株式交換する。取得直後なら譲渡益はほぼゼロ
-- UK / KR / TW 子会社は Hello JP から Hello SG の下へ売買で移す。株式交換と同じ年度、時価が低く Hello JP の欠損金が残る間に。韓国は源泉が 5% → 10% に上がる（要確認）
+- 2027年: Hello SG（シンガポール、正式名称未定）を親会社にする。Hello の株主は HGSG / AISAACSG / AWSMSG の SG 法人 3社になる予定。全員が SG 法人になった直後に株式交換する。取得直後なら譲渡益はほぼゼロ
+- Hello UK / KR / TW は Hello JP から Hello SG の下へ売買で移す。株式交換と同じ年度、時価が低く Hello JP の欠損金が残る間に。韓国は源泉が 5% → 10% に上がる（要確認）
 - 執行役員は Hello SG の取締役として SG に移住。Hello JP の役員からは外れる
 - 上場は未定。するなら Nasdaq。SG 会社法のままで出せるか、上場直前に Cayman へ載せ替えるかは米国側の弁護士に要確認
 - SG 親会社の理由: 子会社株の売却益 0%（JP 約 30%）/ 外国子会社合算税制なし / HQ 自身の利益 17%（JP 約 30%）/ HGSG から見て国外財産で配当源泉 0%。配当の層に差はない
-- ヘッジファンド事業 HelloAlpha → hello/hello-alpha.md
 
-## 事業（2026-09-22）
+### 移行後の法人の役割（2026-09-22 方針）
 
-4事業。HelloDining の下に AutoReserve と Respo が入る（区分は播口による。HP は製品単位で掲載）。
+- Hello SG: 親会社。IP の持ち主。執行役員が経営。HelloAlpha の運用会社（LFMC）はこの下に別法人で作る
+- Hello JP: 日本の事業運営。HelloDining / HelloX / HelloPay の国内売上。HelloAlpha では受託開発と日本の投資家窓口
+- Hello UK: HelloAlpha の運用会社（第1段、FCA）。中核人材の SG 移住後は受託開発会社
+- Hello KR / TW: 各国の事業運営
+
+## 事業群（2026-09-22）
+
+4事業。区分は播口による（HP は製品単位で掲載）。事業は法人をまたぐ。
 
 HelloDining（飲食店向け事業）
 
@@ -96,9 +103,7 @@ SO（2026-09-22）
 
 ## 用語
 
-- Hello JP: 株式会社ハロー（日本、現親会社）
-- Hello SG: 2027年に作る予定のシンガポール親会社。正式名称は未定
-- Hello UK: Hello AI Limited（ロンドン）
+- Hello JP / UK / KR / TW / SG: 法人の略称。正式名称は「法人」の節。会話・ドキュメントでは略称を使う
 - HelloDining: 飲食店向け事業の総称。AutoReserve と Respo
 - AutoReserve / Respo / HelloX / HelloPay / RespoPay: 上記「事業」
 - HelloAlpha: ヘッジファンド事業
