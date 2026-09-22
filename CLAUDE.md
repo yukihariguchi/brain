@@ -29,6 +29,7 @@ brain = Claude が読むための前提集。事実と骨格だけ置く。
 - 4社共通の HR（副業エンジニアのエージェント契約基準・雛形の要点・運用）→ hr.md
 - Hello → hello/hello.md
 - Hello の人材エージェント契約 → hello/hr.md
+- HelloAlpha（Hello のヘッジファンド事業）→ hello/hello-alpha.md
 - aisaac → aisaac/aisaac.md
 - aisaac の人材エージェント契約 → aisaac/hr.md
 - H&G → handg/handg.md
