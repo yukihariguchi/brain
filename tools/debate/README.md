@@ -1,7 +1,14 @@
 # tools/debate
 
-Claude と Codex の最上位モデルを交互に呼び、1つの論点を往復させて最終回答を出す。
-出力の型は CLAUDE.md の「回答の型」と同じ（結論→根拠、10行以内）。論点表は出さない。
+Claude と Codex の最上位モデルで1つの論点を考え、最終回答を CLAUDE.md の「回答の型」で出す（結論→根拠、10行以内）。論点表は出さない。
+
+既定の流れ（`--mode strategy`）
+1. 発散: 両モデルが互いを見ずに独立で3案ずつ出す。幅を作る工程
+2. 攻撃: 相手の案ごとに致命的な穴1つと「結論を変えうる事実」を出す
+3. 討論: 提案側と反論側を交代しながら往復（既定2ラウンド）
+4. 統合: Claude が回答の型で答える。末尾に「残る反論」「要確認（結論を変えうる事実と取り方）」
+
+`--mode debate` は 3 と 4 だけ（既定5ラウンド）。すでにある案の穴を見たいときに使う。
 
 ## 準備
 
@@ -13,12 +20,13 @@ Claude と Codex の最上位モデルを交互に呼び、1つの論点を往�
 ```
 tools/debate/debate.py "Respo を軸に AR で会計まで完結させる方針の穴は"
 tools/debate/debate.py @question.md --refs hello/hello-dining.md decisions.md hr.md --rounds 3
+tools/debate/debate.py "論点" --mode debate --rounds 5
 tools/debate/debate.py "論点" --mock-codex    # Codex 未導入時の動作確認。Codex 役を Claude(Opus) が代替
 ```
 
-- ラウンドごとに提案側と反論側を入れ替える（奇数: Claude 提案 / Codex 反論）
+- 討論はラウンドごとに提案側と反論側を入れ替える（奇数: Claude 提案 / Codex 反論）
 - 反論側が「新しい反論なし」と返したら規定ラウンド前でも終了
-- 最終回答は Claude が書く
+- 最終回答は Claude が書く。発散の案は素材で、採否は播口さんが決める
 
 ## 出力
 

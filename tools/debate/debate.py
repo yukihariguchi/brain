@@ -1,9 +1,17 @@
 #!/usr/bin/env python3
-"""Claude と Codex の最上位モデルを交互に呼び、1つの論点を往復させて最終回答を出す。
+"""Claude と Codex の最上位モデルで1つの論点を考え、最終回答を回答の型で出す。
+
+既定（--mode strategy）: 発散 → 攻撃 → 討論 → 統合
+  1. 発散: 両モデルが互いを見ずに独立で3案ずつ出す（幅を作る）
+  2. 攻撃: 相手の案ごとに致命的な穴1つと「結論を変えうる事実」を出す
+  3. 討論: 提案側と反論側を交代しながら往復（既定2ラウンド）
+  4. 統合: Claude が回答の型で答える。末尾に「残る反論」と「要確認」
+--mode debate: 発散と攻撃を飛ばし、討論だけ回す（既定5ラウンド）
 
 使い方:
-  tools/debate/debate.py "論点"                       # 既定: 5ラウンド、参照は hello-dining.md と decisions.md
+  tools/debate/debate.py "論点"                       # 参照の既定は hello-dining.md と decisions.md
   tools/debate/debate.py @question.md --refs a.md b.md --rounds 3
+  tools/debate/debate.py "論点" --mode debate
   tools/debate/debate.py "論点" --mock-codex           # Codex 未導入時。Codex 役を Claude(Opus) で代替
 
 出力: debates/<日付>-<slug>/ に transcript.md（gitignore）と final.md（commit 対象）
@@ -32,6 +40,7 @@ COMMON_SYSTEM = """あなたは経営者の壁打ち相手。相手は複数社�
 
 PROPOSER_TASK = """あなたの役割は「提案側」。
 これまでの議事にある反論を全部踏まえ、論点に対する現時点で最も強い答えを出す。
+- 議事に発散の案と攻撃があれば、そこから選ぶか組み合わせる。新案を出すなら既存案を捨てる理由を1行で言う。
 - 反論のうち受け入れるものは取り込んで答えを修正する。受け入れないものは1行で理由を言う。
 - 結論を曖昧にしない。条件付きなら条件を明記する。"""
 
@@ -42,12 +51,23 @@ CRITIC_TASK = f"""あなたの役割は「反論側」。
 - 事実の誤りは前提ファイルの該当箇所を引いて示す。
 - 新しい反論が本当に無いなら、本文を「{NO_OBJECTION}」の1行だけにする。無理に出さない。"""
 
-FINAL_TASK = """あなたの役割は「最終回答」。議事全体を読み、論点への答えを経営者に返す。
+DIVERGE_TASK = """あなたの役割は「発散」。この論点に対して、互いに前提の異なる案を3つ出す。
+- 他のモデルの案は見ていない。自分の考えだけで出す。無難な案を並べない。1つは経営者が自分では出しにくい角度にする
+- 各案の型: 「案N: 1行の結論」→「前提: この案が成り立つ条件1行」→「崩れる条件: 何が事実だとこの案は捨てるべきか1行」
+- 3案で9行。前置きと後書きは書かない"""
+
+ATTACK_TASK = """あなたの役割は「攻撃」。相手モデルの3案を読み、案ごとに次を書く。
+- 致命的な穴: 最大1つ。前提ファイルの事実と食い違うなら該当箇所を引く。無ければ「なし」
+- 結論を変えうる事実: この案を採る/捨てるを決める事実を1〜2個。「何の数字か・どこで取れるか（推測なら明示）」まで書く
+- 3案で最大12行。自分の案を弁護しない"""
+
+FINAL_TASK = """あなたの役割は「最終回答」。議事全体（発散・攻撃・討論）を読み、論点への答えを経営者に返す。
 出力の型（厳守）:
 - 1行目は結論。空行で区切る
 - 根拠は箇条書き。1項目=1理由=1行。因果のステップは削らない
-- 全体10行以内
-- 最後に「残る反論:」として、議事で決着しなかった反論を最大2行。無ければ書かない
+- 結論と根拠で10行以内
+- 続けて「残る反論:」として、決着しなかった反論を最大2行。無ければ書かない
+- 続けて「要確認:」として、結論を変えうる事実を最大3行。「何の数字か・どこで取れるか」を書く
 - 一文一義。1文40〜50字まで。略語は初出時に展開。造語・比喩を使わない
 - 論点表・議事の要約・双方の主張の列挙はしない。答えだけ書く"""
 
@@ -122,7 +142,9 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("question", help="論点の文字列。@path.md でファイル指定")
     ap.add_argument("--refs", nargs="*", default=DEFAULT_REFS, help="前提として渡す brain のファイル")
-    ap.add_argument("--rounds", type=int, default=5)
+    ap.add_argument("--mode", choices=["strategy", "debate"], default="strategy",
+                    help="strategy: 発散→攻撃→討論→統合（既定）/ debate: 討論のみ")
+    ap.add_argument("--rounds", type=int, default=None, help="討論のラウンド数。既定 strategy=2, debate=5")
     ap.add_argument("--claude-model", default="fable")
     ap.add_argument("--codex-model", default=None, help="未指定なら Codex CLI の既定モデル")
     ap.add_argument("--codex-effort", default="high", help="Codex の model_reasoning_effort")
@@ -130,6 +152,8 @@ def main():
     ap.add_argument("--mock-model", default="opus")
     ap.add_argument("--out", default="debates", help="出力先（brain からの相対）")
     args = ap.parse_args()
+    if args.rounds is None:
+        args.rounds = 2 if args.mode == "strategy" else 5
 
     if not shutil.which("claude"):
         sys.exit("claude CLI が見つかりません")
@@ -159,21 +183,41 @@ def main():
                 return runner.claude(system, prompt, args.claude_model)
             return runner.codex(system, prompt)
 
+        names = {"claude": f"Claude({args.claude_model})", "codex": codex_label}
+
+        if args.mode == "strategy":
+            ideas = {}
+            for side in ("claude", "codex"):
+                print(f"[発散] {names[side]}", file=sys.stderr)
+                ideas[side] = call(side, f"{COMMON_SYSTEM}\n\n{DIVERGE_TASK}",
+                                   build_prompt(question, refs_text, "", DIVERGE_TASK))
+            for side in ("claude", "codex"):
+                transcript += f"\n## 発散（{names[side]}）\n\n{ideas[side]}\n"
+            transcript_path.write_text(transcript, encoding="utf-8")
+
+            for attacker, target in (("claude", "codex"), ("codex", "claude")):
+                print(f"[攻撃] {names[attacker]} → {names[target]} の案", file=sys.stderr)
+                task = f"{ATTACK_TASK}\n\n### 相手（{names[target]}）の3案\n\n{ideas[target]}"
+                attack = call(attacker, f"{COMMON_SYSTEM}\n\n{ATTACK_TASK}",
+                              build_prompt(question, refs_text, transcript, task))
+                transcript += f"\n## 攻撃（{names[attacker]} → {names[target]} の案）\n\n{attack}\n"
+                transcript_path.write_text(transcript, encoding="utf-8")
+
         stopped = False
+        r = 0
         for r in range(1, args.rounds + 1):
             proposer, critic = ("claude", "codex") if r % 2 == 1 else ("codex", "claude")
-            names = {"claude": f"Claude({args.claude_model})", "codex": codex_label}
 
             print(f"[round {r}] 提案: {names[proposer]}", file=sys.stderr)
             proposal = call(proposer, f"{COMMON_SYSTEM}\n\n{PROPOSER_TASK}",
                             build_prompt(question, refs_text, transcript, PROPOSER_TASK))
-            transcript += f"\n## Round {r} 提案（{names[proposer]}）\n\n{proposal}\n"
+            transcript += f"\n## 討論 Round {r} 提案（{names[proposer]}）\n\n{proposal}\n"
             transcript_path.write_text(transcript, encoding="utf-8")
 
             print(f"[round {r}] 反論: {names[critic]}", file=sys.stderr)
             objection = call(critic, f"{COMMON_SYSTEM}\n\n{CRITIC_TASK}",
                              build_prompt(question, refs_text, transcript, CRITIC_TASK))
-            transcript += f"\n## Round {r} 反論（{names[critic]}）\n\n{objection}\n"
+            transcript += f"\n## 討論 Round {r} 反論（{names[critic]}）\n\n{objection}\n"
             transcript_path.write_text(transcript, encoding="utf-8")
 
             if NO_OBJECTION in objection and len(objection) < len(NO_OBJECTION) + 20:
@@ -187,7 +231,7 @@ def main():
 
     header = (
         f"# {question}\n\n"
-        f"日付: {today} / ラウンド: {r}{'（反論なしで終了）' if stopped else ''} / "
+        f"日付: {today} / mode: {args.mode} / 討論ラウンド: {r}{'（反論なしで終了）' if stopped else ''} / "
         f"Claude: {args.claude_model} / Codex: {args.codex_model or ('mock:' + args.mock_model if args.mock_codex else 'default')} / "
         f"参照: {', '.join(args.refs)}\n\n---\n\n"
     )
