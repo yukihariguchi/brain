@@ -8,9 +8,8 @@
   4. 統合: Claude が回答の型で答える。末尾に「残る反論」と「要確認」
 
 使い方:
-  tools/think/think.py "論点"                       # 参照の既定は hello-dining.md と decisions.md
+  tools/think/think.py "論点" --refs hello/hello-dining.md decisions.md
   tools/think/think.py @question.md --refs a.md b.md --rounds 3
-  tools/think/think.py "論点" --mock-codex           # Codex 未導入時。Codex 役を Claude(Opus) で代替
 
 出力: thoughts/<日付>-<slug>/ に transcript.md（gitignore）と final.md（commit 対象）
 """
@@ -25,7 +24,6 @@ import tempfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-DEFAULT_REFS = ["hello/hello-dining.md", "decisions.md"]
 NO_OBJECTION = "新しい反論なし"
 
 COMMON_SYSTEM = """あなたは経営者の壁打ち相手。相手は複数社を横断して見る経営者で、事業企画から開発まで自分で見る。技術も事業も噛み砕かなくていい。
@@ -99,8 +97,6 @@ class Runner:
         return self._run(cmd, prompt)
 
     def codex(self, system: str, prompt: str) -> str:
-        if self.args.mock_codex:
-            return self.claude(system, prompt, self.args.mock_model)
         out = self.workdir / "codex-last.md"
         if out.exists():
             out.unlink()
@@ -139,20 +135,17 @@ def build_prompt(question: str, refs_text: str, transcript: str, task: str) -> s
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("question", help="論点の文字列。@path.md でファイル指定")
-    ap.add_argument("--refs", nargs="*", default=DEFAULT_REFS, help="前提として渡す brain のファイル")
+    ap.add_argument("--refs", nargs="+", required=True, help="前提として渡す brain のファイル（必須）")
     ap.add_argument("--rounds", type=int, default=2, help="討論のラウンド数")
     ap.add_argument("--claude-model", default="fable")
     ap.add_argument("--codex-model", default=None, help="未指定なら Codex CLI の既定モデル")
     ap.add_argument("--codex-effort", default="high", help="Codex の model_reasoning_effort")
-    ap.add_argument("--mock-codex", action="store_true", help="Codex 役を Claude で代替（動作確認用）")
-    ap.add_argument("--mock-model", default="opus")
     ap.add_argument("--out", default="thoughts", help="出力先（brain からの相対）")
     args = ap.parse_args()
 
-    if not shutil.which("claude"):
-        sys.exit("claude CLI が見つかりません")
-    if not args.mock_codex and not shutil.which("codex"):
-        sys.exit("codex CLI が見つかりません。brew install codex && codex login。動作確認だけなら --mock-codex")
+    missing = [c for c in ("claude", "codex") if not shutil.which(c)]
+    if missing:
+        sys.exit(f"CLI が見つかりません: {', '.join(missing)}。codex は brew install codex && codex login")
 
     question = args.question
     if question.startswith("@"):
@@ -170,7 +163,7 @@ def main():
 
     with tempfile.TemporaryDirectory() as tmp:
         runner = Runner(args, Path(tmp))
-        codex_label = "Codex(mock=Claude " + args.mock_model + ")" if args.mock_codex else "Codex"
+        codex_label = f"Codex({args.codex_model or 'default'})"
 
         def call(side: str, system: str, prompt: str) -> str:
             if side == "claude":
@@ -225,7 +218,7 @@ def main():
     header = (
         f"# {question}\n\n"
         f"日付: {today} / 討論ラウンド: {r}{'（反論なしで終了）' if stopped else ''} / "
-        f"Claude: {args.claude_model} / Codex: {args.codex_model or ('mock:' + args.mock_model if args.mock_codex else 'default')} / "
+        f"Claude: {args.claude_model} / Codex: {args.codex_model or 'default'} / "
         f"参照: {', '.join(args.refs)}\n\n---\n\n"
     )
     final_path.write_text(header + final + "\n", encoding="utf-8")
