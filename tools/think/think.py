@@ -162,7 +162,7 @@ class Runner:
                "--output-last-message", str(out), "-m", self.args.codex_model,
                "-c", f'model_reasoning_effort="{self.args.codex_effort}"']
         if search:
-            cmd += ["--search"]
+            cmd += ["-c", 'web_search="live"']
         stdout = self._run(cmd, f"{system}\n\n---\n\n{prompt}")
         return out.read_text(encoding="utf-8").strip() if out.exists() else stdout
 
@@ -173,7 +173,7 @@ class Runner:
         res = subprocess.run(cmd, input=stdin_text, text=True, capture_output=True, cwd=str(self.workdir))
         if res.returncode != 0:
             sys.stderr.write(res.stderr)
-            sys.exit(f"コマンド失敗: {' '.join(cmd[:2])}")
+            raise RuntimeError(f"コマンド失敗: {' '.join(cmd[:2])}")
         return res.stdout.strip()
 
 
