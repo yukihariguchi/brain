@@ -18,10 +18,10 @@
   見出しに「経過」「仮説」「推論」を含む節は討論まで隠す。節が無ければ全文をどの工程にも渡す
 
 使い方:
-  tools/think/think.py thoughts/2026-09-23-xxx/question.md --refs hello/hello-dining.md decisions.md
+  tools/think/think.py thoughts/2026-09-23-1552-xxx/question.md --refs hello/hello-dining.md decisions.md
   tools/think/think.py "1行の論点" --refs a.md b.md        # 背景なしの簡易実行
 
-出力: thoughts/<日付>-<slug>/ に transcript.md（gitignore）と final.md（commit 対象）
+出力: thoughts/<日付-時刻>-<slug>/ に transcript.md（gitignore）と final.md（commit 対象）
 """
 import argparse
 import datetime as dt
@@ -217,10 +217,11 @@ def main():
 
     refs_text = read_refs(args.refs)
     today = dt.date.today().isoformat()
+    stamp = dt.datetime.now().strftime("%Y-%m-%d-%H%M")  # 時刻まで入れて名前順で新旧が並ぶようにする
     if question_file and question_file.parent.parent == ROOT / args.out:
         out_dir = question_file.parent
     else:
-        out_dir = ROOT / args.out / f"{today}-{slugify(title)}"
+        out_dir = ROOT / args.out / f"{stamp}-{slugify(title)}"
     out_dir.mkdir(parents=True, exist_ok=True)
     transcript_path = out_dir / "transcript.md"
     final_path = out_dir / "final.md"

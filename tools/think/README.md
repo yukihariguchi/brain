@@ -20,7 +20,7 @@ Claude と Codex の最上位モデルで1つの論点を考え、最終回答�
 
 ## 使い方
 
-入力は question.md。会話を持っている Claude Code のセッションが書く。播口さんが「今の議論を think に投げて」と言えば、Claude が `thoughts/<日付>-<論点>/question.md` を作って実行し、final.md を会話に返す。
+入力は question.md。会話を持っている Claude Code のセッションが書く。播口さんが「今の議論を think に投げて」と言えば、Claude が `thoughts/<日付-時刻>-<論点>/question.md` を作って実行し、final.md を会話に返す。
 
 ```
 # 論点              ← 1行
@@ -32,7 +32,7 @@ Claude と Codex の最上位モデルで1つの論点を考え、最終回答�
 見出しに「経過」「仮説」「推論」を含む節は討論まで隠す。発散が仮説に引きずられるのを防ぐため。
 
 ```
-tools/think/think.py thoughts/2026-09-23-xxx/question.md --refs hello/hello-dining.md decisions.md
+tools/think/think.py thoughts/2026-09-23-1552-xxx/question.md --refs hello/hello-dining.md decisions.md
 tools/think/think.py "1行の論点" --refs a.md b.md    # 背景なしの簡易実行
 ```
 
@@ -47,8 +47,8 @@ tools/think/think.py "1行の論点" --refs a.md b.md    # 背景なしの簡易
 
 ## 出力
 
-- `thoughts/<日付>-<論点>/question.md`: 入力。commit する
-- `thoughts/<日付>-<論点>/final.md`: 最終回答。commit する
-- `thoughts/<日付>-<論点>/transcript.md`: 往復ログ。gitignore 済み
+- `thoughts/<日付-時刻>-<論点>/question.md`: 入力。commit する
+- `thoughts/<日付-時刻>-<論点>/final.md`: 最終回答。commit する
+- `thoughts/<日付-時刻>-<論点>/transcript.md`: 往復ログ。gitignore 済み
 - 反映が終わったディレクトリは消す。中身は decisions.md と会社ファイルに移す
 - 決めたことは final.md からではなく、通常どおり decisions.md と会社ファイルに書く
