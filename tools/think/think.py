@@ -1,17 +1,15 @@
 #!/usr/bin/env python3
 """Claude と Codex の最上位モデルで1つの論点を考え、最終回答を回答の型で出す。
 
-既定（--mode strategy）: 発散 → 攻撃 → 討論 → 統合
+流れ: 発散 → 攻撃 → 討論 → 統合
   1. 発散: 両モデルが互いを見ずに独立で3案ずつ出す（幅を作る）
   2. 攻撃: 相手の案ごとに致命的な穴1つと「結論を変えうる事実」を出す
   3. 討論: 提案側と反論側を交代しながら往復（既定2ラウンド）
   4. 統合: Claude が回答の型で答える。末尾に「残る反論」と「要確認」
---mode debate: 発散と攻撃を飛ばし、討論だけ回す（既定5ラウンド）
 
 使い方:
   tools/think/think.py "論点"                       # 参照の既定は hello-dining.md と decisions.md
   tools/think/think.py @question.md --refs a.md b.md --rounds 3
-  tools/think/think.py "論点" --mode debate
   tools/think/think.py "論点" --mock-codex           # Codex 未導入時。Codex 役を Claude(Opus) で代替
 
 出力: thoughts/<日付>-<slug>/ に transcript.md（gitignore）と final.md（commit 対象）
@@ -142,9 +140,7 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("question", help="論点の文字列。@path.md でファイル指定")
     ap.add_argument("--refs", nargs="*", default=DEFAULT_REFS, help="前提として渡す brain のファイル")
-    ap.add_argument("--mode", choices=["strategy", "debate"], default="strategy",
-                    help="strategy: 発散→攻撃→討論→統合（既定）/ debate: 討論のみ")
-    ap.add_argument("--rounds", type=int, default=None, help="討論のラウンド数。既定 strategy=2, debate=5")
+    ap.add_argument("--rounds", type=int, default=2, help="討論のラウンド数")
     ap.add_argument("--claude-model", default="fable")
     ap.add_argument("--codex-model", default=None, help="未指定なら Codex CLI の既定モデル")
     ap.add_argument("--codex-effort", default="high", help="Codex の model_reasoning_effort")
@@ -152,8 +148,6 @@ def main():
     ap.add_argument("--mock-model", default="opus")
     ap.add_argument("--out", default="thoughts", help="出力先（brain からの相対）")
     args = ap.parse_args()
-    if args.rounds is None:
-        args.rounds = 2 if args.mode == "strategy" else 5
 
     if not shutil.which("claude"):
         sys.exit("claude CLI が見つかりません")
@@ -185,43 +179,42 @@ def main():
 
         names = {"claude": f"Claude({args.claude_model})", "codex": codex_label}
 
-        if args.mode == "strategy":
-            ideas = {}
-            for side in ("claude", "codex"):
-                print(f"[発散] {names[side]}", file=sys.stderr)
-                ideas[side] = call(side, f"{COMMON_SYSTEM}\n\n{DIVERGE_TASK}",
-                                   build_prompt(question, refs_text, "", DIVERGE_TASK))
-            for side in ("claude", "codex"):
-                transcript += f"\n## 発散（{names[side]}）\n\n{ideas[side]}\n"
-            transcript_path.write_text(transcript, encoding="utf-8")
+        ideas = {}
+        for side in ("claude", "codex"):
+            print(f"[発散] {names[side]}", file=sys.stderr)
+            ideas[side] = call(side, f"{COMMON_SYSTEM}\n\n{DIVERGE_TASK}",
+                               build_prompt(question, refs_text, "", DIVERGE_TASK))
+        for side in ("claude", "codex"):
+            transcript += f"\n## 発散（{names[side]}）\n\n{ideas[side]}\n"
+        transcript_path.write_text(transcript, encoding="utf-8")
 
-            for attacker, target in (("claude", "codex"), ("codex", "claude")):
-                print(f"[攻撃] {names[attacker]} → {names[target]} の案", file=sys.stderr)
-                task = f"{ATTACK_TASK}\n\n### 相手（{names[target]}）の3案\n\n{ideas[target]}"
-                attack = call(attacker, f"{COMMON_SYSTEM}\n\n{ATTACK_TASK}",
-                              build_prompt(question, refs_text, transcript, task))
-                transcript += f"\n## 攻撃（{names[attacker]} → {names[target]} の案）\n\n{attack}\n"
-                transcript_path.write_text(transcript, encoding="utf-8")
+        for attacker, target in (("claude", "codex"), ("codex", "claude")):
+            print(f"[攻撃] {names[attacker]} → {names[target]} の案", file=sys.stderr)
+            task = f"{ATTACK_TASK}\n\n### 相手（{names[target]}）の3案\n\n{ideas[target]}"
+            attack = call(attacker, f"{COMMON_SYSTEM}\n\n{ATTACK_TASK}",
+                          build_prompt(question, refs_text, transcript, task))
+            transcript += f"\n## 攻撃（{names[attacker]} → {names[target]} の案）\n\n{attack}\n"
+            transcript_path.write_text(transcript, encoding="utf-8")
 
         stopped = False
         r = 0
         for r in range(1, args.rounds + 1):
             proposer, critic = ("claude", "codex") if r % 2 == 1 else ("codex", "claude")
 
-            print(f"[round {r}] 提案: {names[proposer]}", file=sys.stderr)
+            print(f"[討論 {r}] 提案: {names[proposer]}", file=sys.stderr)
             proposal = call(proposer, f"{COMMON_SYSTEM}\n\n{PROPOSER_TASK}",
                             build_prompt(question, refs_text, transcript, PROPOSER_TASK))
             transcript += f"\n## 討論 Round {r} 提案（{names[proposer]}）\n\n{proposal}\n"
             transcript_path.write_text(transcript, encoding="utf-8")
 
-            print(f"[round {r}] 反論: {names[critic]}", file=sys.stderr)
+            print(f"[討論 {r}] 反論: {names[critic]}", file=sys.stderr)
             objection = call(critic, f"{COMMON_SYSTEM}\n\n{CRITIC_TASK}",
                              build_prompt(question, refs_text, transcript, CRITIC_TASK))
             transcript += f"\n## 討論 Round {r} 反論（{names[critic]}）\n\n{objection}\n"
             transcript_path.write_text(transcript, encoding="utf-8")
 
             if NO_OBJECTION in objection and len(objection) < len(NO_OBJECTION) + 20:
-                print(f"[round {r}] 新しい反論なし。終了", file=sys.stderr)
+                print(f"[討論 {r}] 新しい反論なし。終了", file=sys.stderr)
                 stopped = True
                 break
 
@@ -231,7 +224,7 @@ def main():
 
     header = (
         f"# {question}\n\n"
-        f"日付: {today} / mode: {args.mode} / 討論ラウンド: {r}{'（反論なしで終了）' if stopped else ''} / "
+        f"日付: {today} / 討論ラウンド: {r}{'（反論なしで終了）' if stopped else ''} / "
         f"Claude: {args.claude_model} / Codex: {args.codex_model or ('mock:' + args.mock_model if args.mock_codex else 'default')} / "
         f"参照: {', '.join(args.refs)}\n\n---\n\n"
     )
