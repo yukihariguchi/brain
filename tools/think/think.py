@@ -105,8 +105,7 @@ class Runner:
             "-C", str(self.workdir), "--output-last-message", str(out),
             "-c", f'model_reasoning_effort="{self.args.codex_effort}"',
         ]
-        if self.args.codex_model:
-            cmd += ["-m", self.args.codex_model]
+        cmd += ["-m", self.args.codex_model]
         full = f"{system}\n\n---\n\n{prompt}"
         stdout = self._run(cmd, full)
         if out.exists():
@@ -138,8 +137,8 @@ def main():
     ap.add_argument("--refs", nargs="+", required=True, help="前提として渡す brain のファイル（必須）")
     ap.add_argument("--rounds", type=int, default=2, help="討論のラウンド数")
     ap.add_argument("--claude-model", default="fable")
-    ap.add_argument("--codex-model", default=None, help="未指定なら Codex CLI の既定モデル")
-    ap.add_argument("--codex-effort", default="high", help="Codex の model_reasoning_effort")
+    ap.add_argument("--codex-model", default="gpt-6-astra")
+    ap.add_argument("--codex-effort", default="xhigh", help="Codex の model_reasoning_effort")
     ap.add_argument("--out", default="thoughts", help="出力先（brain からの相対）")
     args = ap.parse_args()
 
@@ -163,7 +162,7 @@ def main():
 
     with tempfile.TemporaryDirectory() as tmp:
         runner = Runner(args, Path(tmp))
-        codex_label = f"Codex({args.codex_model or 'default'})"
+        codex_label = f"Codex({args.codex_model})"
 
         def call(side: str, system: str, prompt: str) -> str:
             if side == "claude":
@@ -218,7 +217,7 @@ def main():
     header = (
         f"# {question}\n\n"
         f"日付: {today} / 討論ラウンド: {r}{'（反論なしで終了）' if stopped else ''} / "
-        f"Claude: {args.claude_model} / Codex: {args.codex_model or 'default'} / "
+        f"Claude: {args.claude_model} / Codex: {args.codex_model} / "
         f"参照: {', '.join(args.refs)}\n\n---\n\n"
     )
     final_path.write_text(header + final + "\n", encoding="utf-8")
