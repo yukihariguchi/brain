@@ -194,7 +194,7 @@ def main():
     ap.add_argument("--refs", nargs="+", required=True, help="前提として渡す brain のファイル（必須）")
     ap.add_argument("--rounds", type=int, default=3, help="討論のラウンド数")
     ap.add_argument("--claude-model", default="fable")
-    ap.add_argument("--claude-effort", default="max", help="Claude の effort（low/medium/high/xhigh/max）")
+    ap.add_argument("--claude-effort", default="xhigh", help="Claude の effort（low/medium/high/xhigh/max）")
     ap.add_argument("--codex-model", default="gpt-6-astra")
     ap.add_argument("--codex-effort", default="xhigh", help="Codex の model_reasoning_effort")
     ap.add_argument("--no-research", action="store_true", help="調査（Web 検索）を飛ばす")

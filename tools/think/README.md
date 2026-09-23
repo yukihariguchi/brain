@@ -43,7 +43,7 @@ tools/think/think.py "1行の論点" --refs a.md b.md    # 背景なしの簡易
 - 討論はラウンドごとに提案側と反論側を入れ替える（奇数: Claude 提案 / Codex 反論）
 - 反論側が「新しい反論なし」と返したら規定ラウンド前でも終了
 - 最終回答は Claude が書く。発散の案は素材で、採否は播口さんが決める
-- モデルの既定は Claude=fable（effort max）、Codex=gpt-6-astra（reasoning effort xhigh）。`--claude-model` `--claude-effort` `--codex-model` `--codex-effort` で変更
+- モデルの既定は Claude=fable（effort xhigh）、Codex=gpt-6-astra（reasoning effort xhigh）。`--claude-model` `--claude-effort` `--codex-model` `--codex-effort` で変更
 
 ## 出力
 
