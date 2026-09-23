@@ -7,9 +7,14 @@
   3. 討論: 提案側と反論側を交代しながら往復（既定2ラウンド）
   4. 統合: Claude が回答の型で答える。末尾に「残る反論」と「要確認」
 
+入力: question.md（論点 + 背景 + 播口さんの現在の仮説）。会話を持っている Claude Code のセッションが書く。
+  # 論点          ← 1行。出力ディレクトリ名にも使う
+  ## 背景         ← 会話で出た事実・推論・却下した案。brain に無いものはここに全部書く
+  ## 現在の仮説   ← 播口さんの今の答え。発散はこれを超える案を出す
+
 使い方:
-  tools/think/think.py "論点" --refs hello/hello-dining.md decisions.md
-  tools/think/think.py @question.md --refs a.md b.md --rounds 3
+  tools/think/think.py thoughts/2026-09-23-xxx/question.md --refs hello/hello-dining.md decisions.md
+  tools/think/think.py "1行の論点" --refs a.md b.md        # 背景なしの簡易実行
 
 出力: thoughts/<日付>-<slug>/ に transcript.md（gitignore）と final.md（commit 対象）
 """
@@ -49,8 +54,9 @@ CRITIC_TASK = f"""あなたの役割は「反論側」。
 
 DIVERGE_TASK = """あなたの役割は「発散」。この論点に対して、互いに前提の異なる案を3つ出す。
 - 他のモデルの案は見ていない。自分の考えだけで出す。無難な案を並べない。1つは経営者が自分では出しにくい角度にする
-- 各案の型: 「案N: 1行の結論」→「前提: この案が成り立つ条件1行」→「崩れる条件: 何が事実だとこの案は捨てるべきか1行」
-- 3案で9行。前置きと後書きは書かない"""
+- 「現在の仮説」や前提ファイルの現方針をそのまま維持する案は数えない。仮説を超える案、または仮説を具体化して一段強くした案を出す
+- 各案の型: 「案N: 1行の結論」→「仕組み: 誰が何をして金がどう動くか、3〜5行」→「根拠: 前提ファイルか背景の事実を引く。数字があれば数字で」→「崩れる条件: 何が事実ならこの案は捨てるか1行」
+- 行数の上限は無い。ただし前置き・後書き・言い換えは書かない"""
 
 ATTACK_TASK = """あなたの役割は「攻撃」。相手モデルの3案を読み、案ごとに次を書く。
 - 致命的な穴: 最大1つ。前提ファイルの事実と食い違うなら該当箇所を引く。無ければ「なし」
@@ -65,7 +71,8 @@ FINAL_TASK = """あなたの役割は「最終回答」。議事全体（発散�
 - 続けて「残る反論:」として、決着しなかった反論を最大2行。無ければ書かない
 - 続けて「要確認:」として、結論を変えうる事実を最大3行。「何の数字か・どこで取れるか」を書く
 - 一文一義。1文40〜50字まで。略語は初出時に展開。造語・比喩を使わない
-- 論点表・議事の要約・双方の主張の列挙はしない。答えだけ書く"""
+- 論点表・議事の要約・双方の主張の列挙はしない。答えだけ書く
+- 論点に直接答える。前提ファイルの方針の言い直しは答えではない。「現在の仮説」に対して、同意か、修正か、別案かを明示する"""
 
 
 def slugify(text: str, limit: int = 40) -> str:
@@ -147,17 +154,26 @@ def main():
         sys.exit(f"CLI が見つかりません: {', '.join(missing)}。codex は brew install codex && codex login")
 
     question = args.question
-    if question.startswith("@"):
-        question = Path(question[1:]).read_text(encoding="utf-8").strip()
+    question_file = None
+    if question.startswith("@") or question.endswith(".md"):
+        question_file = Path(question.lstrip("@"))
+        if not question_file.is_absolute():
+            question_file = ROOT / question_file
+        question = question_file.read_text(encoding="utf-8").strip()
+    first = next((l for l in question.splitlines() if l.strip()), question)
+    title = re.sub(r"^#+\s*", "", first).strip()
 
     refs_text = read_refs(args.refs)
     today = dt.date.today().isoformat()
-    out_dir = ROOT / args.out / f"{today}-{slugify(question)}"
+    if question_file and question_file.parent.parent == ROOT / args.out:
+        out_dir = question_file.parent  # thoughts/<dir>/question.md ならその場に出す
+    else:
+        out_dir = ROOT / args.out / f"{today}-{slugify(title)}"
     out_dir.mkdir(parents=True, exist_ok=True)
     transcript_path = out_dir / "transcript.md"
     final_path = out_dir / "final.md"
 
-    transcript = f"# 論点\n\n{question}\n\n参照: {', '.join(args.refs)}\n"
+    transcript = f"# 論点\n\n{question}\n\n参照: {', '.join(args.refs)}\n" if not question.startswith("#") else f"{question}\n\n参照: {', '.join(args.refs)}\n"
     transcript_path.write_text(transcript, encoding="utf-8")
 
     with tempfile.TemporaryDirectory() as tmp:
@@ -215,7 +231,7 @@ def main():
                               build_prompt(question, refs_text, transcript, FINAL_TASK), args.claude_model)
 
     header = (
-        f"# {question}\n\n"
+        f"# {title}\n\n"
         f"日付: {today} / 討論ラウンド: {r}{'（反論なしで終了）' if stopped else ''} / "
         f"Claude: {args.claude_model} / Codex: {args.codex_model} / "
         f"参照: {', '.join(args.refs)}\n\n---\n\n"
