@@ -75,12 +75,11 @@ brain = Claude が読むための前提集。事実と骨格だけ置く。
 
 ### モデル運用
 
-Lead=Fable、実務はサブ。トークンはLeadに集中させない。原則 general-purpose / Explore に投げる。
+Lead=Fable、実務はサブ（Opus 5.5）。トークンはLeadに集中させない。原則 general-purpose / Explore に投げる。
 
 - Lead: GO/NO-GO・優先順位・戦略の最終判断、独自仮説への反論役
-- サブ（Opus）: 仕様ドラフト・論点抽出・複雑な実装修正。判断が絡むもの
-- サブ（Sonnet）: 市場調査・横断検索・要約・議事録・機械的な実装修正
-- 迷ったら Sonnet。品質が足りなかった時だけ Opus に上げる
+- サブ: 仕様ドラフト・論点抽出・調査・横断検索・要約・議事録・実装修正。Agent 呼び出し時は model=opus を明示する
+- Sonnet は使わない（2026-09-23 決定）
 
 ---
 
