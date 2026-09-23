@@ -1,3 +1,3 @@
 # 討論の往復ログは置かない（議論ログは brain の対象外）。final.md だけ commit する
-debates/**/transcript.md
-debates/**/round-*.md
+thoughts/**/transcript.md
+thoughts/**/round-*.md

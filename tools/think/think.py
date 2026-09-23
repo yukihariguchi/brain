@@ -9,12 +9,12 @@
 --mode debate: 発散と攻撃を飛ばし、討論だけ回す（既定5ラウンド）
 
 使い方:
-  tools/debate/debate.py "論点"                       # 参照の既定は hello-dining.md と decisions.md
-  tools/debate/debate.py @question.md --refs a.md b.md --rounds 3
-  tools/debate/debate.py "論点" --mode debate
-  tools/debate/debate.py "論点" --mock-codex           # Codex 未導入時。Codex 役を Claude(Opus) で代替
+  tools/think/think.py "論点"                       # 参照の既定は hello-dining.md と decisions.md
+  tools/think/think.py @question.md --refs a.md b.md --rounds 3
+  tools/think/think.py "論点" --mode debate
+  tools/think/think.py "論点" --mock-codex           # Codex 未導入時。Codex 役を Claude(Opus) で代替
 
-出力: debates/<日付>-<slug>/ に transcript.md（gitignore）と final.md（commit 対象）
+出力: thoughts/<日付>-<slug>/ に transcript.md（gitignore）と final.md（commit 対象）
 """
 import argparse
 import datetime as dt
@@ -75,7 +75,7 @@ FINAL_TASK = """あなたの役割は「最終回答」。議事全体（発散�
 def slugify(text: str, limit: int = 40) -> str:
     s = re.sub(r"\s+", "-", text.strip())
     s = re.sub(r"[^\w\-ぁ-んァ-ン一-龥]", "", s)
-    return s[:limit] or "debate"
+    return s[:limit] or "think"
 
 
 def read_refs(refs):
@@ -150,7 +150,7 @@ def main():
     ap.add_argument("--codex-effort", default="high", help="Codex の model_reasoning_effort")
     ap.add_argument("--mock-codex", action="store_true", help="Codex 役を Claude で代替（動作確認用）")
     ap.add_argument("--mock-model", default="opus")
-    ap.add_argument("--out", default="debates", help="出力先（brain からの相対）")
+    ap.add_argument("--out", default="thoughts", help="出力先（brain からの相対）")
     args = ap.parse_args()
     if args.rounds is None:
         args.rounds = 2 if args.mode == "strategy" else 5

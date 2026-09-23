@@ -1,4 +1,4 @@
-# tools/debate
+# tools/think
 
 Claude と Codex の最上位モデルで1つの論点を考え、最終回答を CLAUDE.md の「回答の型」で出す（結論→根拠、10行以内）。論点表は出さない。
 
@@ -18,10 +18,10 @@ Claude と Codex の最上位モデルで1つの論点を考え、最終回答�
 ## 使い方
 
 ```
-tools/debate/debate.py "Respo を軸に AR で会計まで完結させる方針の穴は"
-tools/debate/debate.py @question.md --refs hello/hello-dining.md decisions.md hr.md --rounds 3
-tools/debate/debate.py "論点" --mode debate --rounds 5
-tools/debate/debate.py "論点" --mock-codex    # Codex 未導入時の動作確認。Codex 役を Claude(Opus) が代替
+tools/think/think.py "Respo を軸に AR で会計まで完結させる方針の穴は"
+tools/think/think.py @question.md --refs hello/hello-dining.md decisions.md hr.md --rounds 3
+tools/think/think.py "論点" --mode debate --rounds 5
+tools/think/think.py "論点" --mock-codex    # Codex 未導入時の動作確認。Codex 役を Claude(Opus) が代替
 ```
 
 - 討論はラウンドごとに提案側と反論側を入れ替える（奇数: Claude 提案 / Codex 反論）
@@ -30,6 +30,6 @@ tools/debate/debate.py "論点" --mock-codex    # Codex 未導入時の動作確
 
 ## 出力
 
-- `debates/<日付>-<論点>/final.md`: 最終回答。commit する
-- `debates/<日付>-<論点>/transcript.md`: 往復ログ。gitignore 済み
+- `thoughts/<日付>-<論点>/final.md`: 最終回答。commit する
+- `thoughts/<日付>-<論点>/transcript.md`: 往復ログ。gitignore 済み
 - 決めたことは final.md からではなく、通常どおり decisions.md と会社ファイルに書く
