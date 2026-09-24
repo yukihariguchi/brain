@@ -24,5 +24,5 @@
 
 ## 用語
 
-- HGJP: 株式会社Harry&Gucci（播口の日本の資産管理会社）。詳細は ../handg.md
+- HGJP: 株式会社Harry&Gucci（播口の日本の資産管理会社）。詳細は ../base.md
 - AWSMJP: オーサムの日本法人（正式名称は要確認）

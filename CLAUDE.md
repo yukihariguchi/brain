@@ -27,27 +27,27 @@ brain = Claude が読むための前提集。事実と骨格だけ置く。
   - 判断基準・進め方の好み → me/me.md
   - 日本出国（SG 移住）の計画と出国税・相続税の事実 → me/leaving-japan.md
 - 4社共通の HR（副業エンジニアのエージェント契約基準・雛形の要点・運用）→ hr.md
-- Hello → hello/hello.md
+- Hello → hello/base.md
 - Hello の人材エージェント契約 → hello/hr.md
 - HelloDining（Hello の飲食店向け事業。AutoReserve / Respo）→ hello/hello-dining.md
 - HelloAlpha（Hello のヘッジファンド事業）→ hello/hello-alpha.md
-- aisaac → aisaac/aisaac.md
+- aisaac → aisaac/base.md
 - aisaac の人材エージェント契約 → aisaac/hr.md
-- H&G → handg/handg.md
-- 株式会社白（Haku、HGJP が25%出資する飲食会社）→ handg/haku/haku.md
+- H&G → handg/base.md
+- 株式会社白（Haku、HGJP が25%出資する飲食会社）→ handg/haku/base.md
 - CodeCast → codecast.md
 - A2Z / Rise（同一会社）→ a2z-rise/
-  - 2事業の共通事項（会社の立て付け・体制など）→ a2z-rise/ 直下（例: a2z-rise/a2z-rise.md）
+  - 2事業の共通事項（会社の立て付け・体制など）→ a2z-rise/ 直下（例: a2z-rise/base.md）
   - A2Z / Rise の HR（人事・採用・外部人材）→ a2z-rise/hr.md
-  - A2Z 固有 → a2z-rise/a2z/a2z.md
-  - Rise 固有 → a2z-rise/rise/rise.md
+  - A2Z 固有 → a2z-rise/a2z/base.md
+  - Rise 固有 → a2z-rise/rise/base.md
 - 決定の履歴 → decisions.md
 
 質問に関係するものだけ読む。全部読まない。
 
 ### 置き場ルール
 
-- 特定の会社の話 → その会社のファイル
+- 特定の会社の話 → その会社のファイル。各会社フォルダの基本ファイル（法人・体制・事業群）は base.md（2026-09-24。サービス名 Hello と衝突させないため）
 - 会社をまたぐ話 → me/me.md。テーマが大きいものは専用ファイル（例: hr.md）
 - 播口個人の話（居住・出国・家族・個人資産）→ me/。会社の話は入れない（H&G は handg/）
 - 迷ったら具体側（会社側）に置く。2社目が使い出した時点で上に昇格させる

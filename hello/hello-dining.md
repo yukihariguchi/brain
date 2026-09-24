@@ -1,7 +1,7 @@
 # HelloDining
 
 Hello の飲食店向け事業。ユーザー向けの AutoReserve（以下 AR）と、店向けの Respo の2つ。
-法人・体制は hello/hello.md。基本戦略・TAM（獲得可能な最大市場規模）・ロードマップ・口コミ戦略・AR Rating の設計は Notion（末尾「参照」に URL と要約）。
+法人・体制は hello/base.md。基本戦略・TAM（獲得可能な最大市場規模）・ロードマップ・口コミ戦略・AR Rating の設計は Notion（末尾「参照」に URL と要約）。
 
 ## 事業の構成
 

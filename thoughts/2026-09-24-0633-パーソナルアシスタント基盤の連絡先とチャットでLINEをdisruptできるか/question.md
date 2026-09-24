@@ -2,7 +2,7 @@
 
 ## 背景（事実）
 
-2026-09-24 時点で播口と Claude が事実として共有しているもの。brain（hello/hello.md・hello/hello-dining.md・decisions.md）に無いものを含む。
+2026-09-24 時点で播口と Claude が事実として共有しているもの。brain（hello/base.md・hello/hello-dining.md・decisions.md）に無いものを含む。
 
 ### Hello 側
 

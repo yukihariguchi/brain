@@ -1,6 +1,6 @@
 # 連絡先とチャットをパーソナルアシスタント基盤の新しい体験に置き換え、ローンチ後にバイラルで広がる前提で、Hello は LINE を disrupt できるか
 
-日付: 2026-09-24 / 討論ラウンド: 3 / Claude: fable(xhigh) / Codex: gpt-6-astra(xhigh) / 調査: あり / 参照: hello/hello-dining.md, hello/hello.md, decisions.md
+日付: 2026-09-24 / 討論ラウンド: 3 / Claude: fable(xhigh) / Codex: gpt-6-astra(xhigh) / 調査: あり / 参照: hello/hello-dining.md, hello/base.md, decisions.md
 
 ---
 

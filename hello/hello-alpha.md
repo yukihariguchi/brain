@@ -1,7 +1,7 @@
 # HelloAlpha
 
 Hello のヘッジファンド事業。AI モデルが運用し、人の運用者は置かない。
-グループの立て付けは hello/hello.md。
+グループの立て付けは hello/base.md。
 
 ## 前提（2026-09-22）
 
