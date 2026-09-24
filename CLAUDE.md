@@ -31,6 +31,7 @@ brain = Claude が読むための前提集。事実と骨格だけ置く。
 - Hello の人材エージェント契約 → hello/hr.md
 - HelloDining（Hello の飲食店向け事業。AutoReserve / Respo）→ hello/hello-dining.md
 - HelloAlpha（Hello のヘッジファンド事業）→ hello/hello-alpha.md
+- Hello（Hello のパーソナルアシスタント。決済の方針）→ hello/hello-assistant.md
 - aisaac → aisaac/base.md
 - aisaac の人材エージェント契約 → aisaac/hr.md
 - H&G → handg/base.md
