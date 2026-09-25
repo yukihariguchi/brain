@@ -38,7 +38,7 @@ Stripe の Link も同じ分け方。
 
 ## 外部への提供
 
-AutoReserve・Hello・外部が同じ「HelloPay の財布」API を使う。ユーザーは Hello ID で 1 回登録すれば、どのエージェントからも使える。
+AutoReserve・Hello・外部が同じ「HelloPay の財布」API を使う。ユーザーは電話番号かメールで HelloPay に 1 回登録すれば（アプリ不要。外部の決済画面に HelloPay の部品を埋め込み、SMS のコードと規約への同意だけ）、どのエージェントからも使える。登録が要る理由はカードの保管・使い切りカードの規約・承認の届け先の 3 つ。見せ方は Link と同じく「HelloPay で払う」と名前を出す。
 
 取り分（1 万円あたり）
 
