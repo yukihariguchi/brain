@@ -57,7 +57,7 @@ HelloX
 HelloPay
 
 - 決済代行。カード・Apple Pay・Google Pay・サブスク決済を API で提供。Respo 向けは RespoPay、端末レス決済。pay.hello.ai
-- プロダクト名（2026-09-25）: HelloPay Payments（オンライン）/ HelloPay Terminal（店頭。RespoPay を含む）/ HelloPay for Agents（エージェント決済）。詳細は hello/hello-pay.md
+- プロダクト名（2026-09-25）: HelloPay Payments（オンライン）/ HelloPay Terminal（店頭。RespoPay を含む）/ HelloPay Issuing（カード発行の基盤）/ HelloPay for Agents（エージェント決済）。詳細は hello/hello-pay.md
 
 HelloAlpha
 
