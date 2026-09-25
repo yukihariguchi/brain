@@ -28,11 +28,11 @@
 - 理由: 「本人がいつでも出られる」が製品そのもので、Muse の人の代行とも Google の後で読む方式とも違う点になる。番号の効用は発信でなく着信（本人が外に出す番号）にあり、切替費用として最初から積む
 - 実行前の要確認: HelloX の PBX の会議通話（聞く・ささやく・割り込む）と通話中のテキスト指示の受け口 / 番号の在庫と 1 本の月額原価 / 電気通信事業の届出と番号使用計画の認定 / AI 開示と録音告知の文言（AutoReserve の現行に合わせる）
 
-## 2026-09-25 エージェント決済の開発者向け名称: HelloPay for Agents
+## 2026-09-25 HelloPay のプロダクト名: Payments / Terminal / for Agents
 
-- 決めたこと: エージェント（Hello・AutoReserve・外部）向けの決済 API の名前は HelloPay for Agents。API は 1 本で、加盟店なら直接請求、それ以外なら使い切りカード、は内側で選ぶ。ユーザー向けは名前を分けず「HelloPay で払う」。詳細は hello/hello-pay.md
-- 却下した案: HelloPay Agent / エージェント決済（HelloPay）/ Stripe のように財布・発行・加盟店側の 3 つに分けて名付ける
-- 理由: 売る相手が当面エージェント開発者とユーザーだけなので、分ける理由が無い。誰向けかが名前で分かる
+- 決めたこと: HelloPay Payments（オンライン決済）/ HelloPay Terminal（店頭決済。端末レス・決済リンク・RespoPay を含む）/ HelloPay for Agents（エージェント決済）。Stripe と同じく機能で名付ける。エージェント（Hello・AutoReserve・外部）向けの決済 API の名前は HelloPay for Agents。API は 1 本で、加盟店なら直接請求、それ以外なら使い切りカード、は内側で選ぶ。ユーザー向けは名前を分けず「HelloPay で払う」。詳細は hello/hello-pay.md
+- 却下した案: 相手で名付ける（HelloPay Online / Store）/ PSP を 1 つのままにして for Agents だけ分ける / HelloPay Agent / エージェント決済（HelloPay）/ Stripe のように財布・発行・加盟店側の 3 つに分けて名付ける
+- 理由: 開発者に一目で通じ、Stripe と対で説明できる。エージェント決済は売る相手が当面エージェント開発者とユーザーだけなので、財布・発行・加盟店側に分けない
 
 ## 2026-09-25 Hello（パーソナルアシスタント）の決済: ライフカードを BIN スポンサーにした取引ごとの使い切りバーチャルカード
 

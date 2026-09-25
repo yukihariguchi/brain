@@ -2,6 +2,12 @@
 
 Hello, Inc. の決済代行。法人・体制は hello/base.md。ここには、エージェント（Hello・AutoReserve・外部）がユーザーの代わりに払う仕組みを置く。
 
+## プロダクト（名称は 2026-09-25 決定）
+
+- HelloPay Payments: オンライン決済（EC・アプリ）
+- HelloPay Terminal: 店頭決済（端末レス・決済リンク。RespoPay はこの中）
+- HelloPay for Agents: エージェント決済（下記）
+
 ## 事実（2026-09-25）
 
 - 決済代行（PSP）。PCI DSS あり。アクワイアラーからの入金は月 6 回
