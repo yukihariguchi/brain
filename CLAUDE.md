@@ -95,6 +95,7 @@ Lead=Fable、実務はサブ（Opus 5.5）。トークンはLeadに集中させ�
 - 決定は decisions.md に「決めたこと / 却下した案 / 理由」の形で
 - 推測を事実として書かない。確認が必要なものは「要確認」と明記する
 - ファイルを変更したら commit & push。push 前に `git pull --rebase --autostash`
+- hello/hello.md を変更したら、commit 後に Notion の「Hello Winning Playbook」（https://app.notion.com/p/3e8644312c5c81f1994dfb5a5f69a3fc、page id 3e8644312c5c81f1994dfb5a5f69a3fc）を notion-update-page の replace_content で全文同期する。内容は hello.md から先頭の H1 を除いたもの。先頭に「brain の hello/hello.md と同期。最終同期: YYYY-MM-DD」の引用行を置く（2026-09-27 設定）
 
 ---
 
