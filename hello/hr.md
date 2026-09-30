@@ -13,6 +13,7 @@ Hello の人事・採用・外部人材の前提。人材紹介以外のテー�
 - Drive（基本契約のみ）: https://drive.google.com/drive/folders/1aTRr1Al6io-cLRyKZpWrxixyW8wlhn8K
 - Hello 雛形（2026-09-18。共通雛形の原本）: https://docs.google.com/document/d/1RX1ww6U65Wazj0DxexHdeYpzjobOGuFSDg4_gT-Gww0/edit
   - 22条・甲乙・別紙なし（2026-09-19 決定。末尾の「別紙 個別契約書（雛形）」は削除する。Doc からの削除は要確認）。個別契約は3条1項の書面（注文書等）で成立。様式は後で作る
+  - 2026-09-30 の4点変更（hr.md「雛形の要点」の1条・12条。旧契約の縛り解消 / 上限を直近6か月の実績手数料に・資料提示まで請求不可・故意や契約外の請求にも上限 / 本人応募の除外を媒体不問に / 個別契約での上書き不可）は Doc 未反映。要反映
 
 ### 1. 4社の条件（2026-09-18）
 
