@@ -53,7 +53,7 @@
 | CodeCast（候補者） | codecast.jp | app.codecast.jp |
 | CodeCast Hire（企業） | hire.codecast.jp | hire-app.codecast.jp |
 
-※ 要確認: base.md（2026-10-04）では候補者向け LP を lp.codecast.jp、会社 HP を company.codecast.jp としている。Notion（2026-09-14）より新しい。どちらが現行か確認して揃える。
+※ 候補者向け LP の正式ドメインは codecast.jp。媒体リリースまでは lp.codecast.jp に置く（2026-10-04）。会社 HP は company.codecast.jp（base.md 参照）。
 
 入口と正本を別ドメインに置く。LP は未登録者を口説く場所、アプリはログインした人が毎週戻ってくる場所で、更新の頻度も速度も求められるものが違う。分けておけば、LP の文言差し替え（職種の開放ごとに発生する）とアプリのデプロイが互いを止めない。認証スコープと計測も混ざらない。
 

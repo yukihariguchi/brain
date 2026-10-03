@@ -28,7 +28,7 @@ IT業界向けの人材紹介。メディアで集めた候補者を閉じた自
 
 - CodeCast（候補者、app.codecast.jp）: 正本。プロフィール・職務経歴書・いいね/スカウト・副業の稼働管理
 - CodeCast Hire（企業、hire-app.codecast.jp）: 登録者を検索し、いいね → マッチング → スカウト
-- LP と会社 HP（2026-10-04）: 候補者向け LP は lp.codecast.jp、企業向け LP は hire.codecast.jp、会社 HP は company.codecast.jp。company は robots.txt で検索対象外にする
+- LP と会社 HP（2026-10-04）: 候補者向け LP は codecast.jp（媒体リリースまでは lp.codecast.jp に仮置き）、企業向け LP は hire.codecast.jp、会社 HP は company.codecast.jp。company は robots.txt で検索対象外にする
 - 1ブランドで IT 業界の全職種を受け入れる。Hire の検索対象に出す職種は在庫が溜まった順に開放する。エンジニアから
 - 公式LINE は正本を持たない。長期の資産は CodeCast に溜め、LINE は落とすと損失が大きい局面だけ使う
 
