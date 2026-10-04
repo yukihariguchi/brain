@@ -39,6 +39,8 @@ brain = Claude が読むための前提集。事実と骨格だけ置く。
 - 株式会社白（Haku、HGJP が25%出資する飲食会社）→ handg/haku/base.md
 - 株式会社H2T2（H&G が50%出資。レストラン YAWYE を運営）→ handg/h2t2/base.md
 - H2T2 の会計・経理（マネフォの立て付け・売上と原価の計上・部門・科目ルール）→ handg/h2t2/finance.md
+- 株式会社サンクチュアリ（H&G の出資先。バー secret を運営）→ handg/sanctuary/base.md
+- サンクチュアリの会計・経理（マネフォの立て付け・部門・科目ルール・未解決事項）→ handg/sanctuary/finance.md
 - CodeCast → codecast/base.md
 - CodeCast の Winning Playbook（戦略・プロダクト・収益モデル・ファネル・KPI。正本は Notion）→ codecast/playbook.md
 - CodeCast の会計・経理（マネフォの立て付け・科目と部門のルール）→ codecast/finance.md
