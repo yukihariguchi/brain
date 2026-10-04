@@ -27,7 +27,6 @@ brain = Claude が読むための前提集。事実と骨格だけ置く。
   - 判断基準・進め方の好み → me/me.md
   - 日本出国（SG 移住）の計画と出国税・相続税の事実 → me/leaving-japan.md
 - 4社共通の HR（副業エンジニアのエージェント契約基準・雛形の要点・運用）→ hr.md
-- 全社共通の月次締めチェック（PL / BS の確認ルール・入力・報告の型）→ monthly-close.md
 - Hello → hello/base.md
 - Hello の人材エージェント契約 → hello/hr.md
 - HelloDining（Hello の飲食店向け事業。AutoReserve / Respo）→ hello/hello-dining.md
