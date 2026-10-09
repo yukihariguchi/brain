@@ -89,6 +89,12 @@ HGJP 分（45.0%）
 - 取締役は播口以外にもいる。従業員あり（人数・役割は要確認）
 - 播口の UK 移住後、UK の税務（管理支配地・海外会社の所得帰属）で問われた時の根拠になる事実。詳細は me/leaving-japan.md
 
+## バックオフィス（2026-10-10）
+
+- 日本側のバックオフィス業務（総合振込・給与確定・契約書の送付と返送確認・登記変更・領収書と証憑の格納・郵便物）は Azusa Minamiyama（Slack: azu、U0A2162GD3P）が担当。雇用形態は要確認
+- 依頼の大半は H&G Slack の #corp-bo-general に集まる。ほかに #office（オフィス・郵便）、#corp-labor-ex-nexpert（社労士）、#office-ex-porepo（物件）、#haku-pr（白の Instagram）
+- 「azusa さんへの依頼で終わっていないもの」を聞かれたら: Slack で `<@U0A2162GD3P>` を期間指定で全件検索し、各スレッドの返信・リアクション・本人の投稿と照合して 未対応 / 対応中 / 完了 に分ける。口頭で済んだものと Instagram の実投稿は Slack からは判定できない。結果は Hello の #memo-yuki-hariguchi にリンク付きで投稿する（2026-10-10 に 8/10〜10/10 分を実施）
+
 ## 用語
 - HGSG : H&G MANAGEMENT PTE. LTD.（シンガポールの資産管理会社）
 - HGJP : 株式会社Harry&Gucci（日本の資産管理会社）
