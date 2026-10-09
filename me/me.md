@@ -20,6 +20,15 @@ A2Z / Rise と aisaac / Hello のつながりを外部に知られないよう�
 
 （未記入）
 
+## Claude Code の Slack 接続と定期実行（2026-10-10）
+
+- Slack は 6 ワークスペース（Hello / aisaac / H&G / CodeCast / A2Z / Rise）を自前 MCP（korotovsky/slack-mcp-server、ユーザートークン）で接続。接続名は slack-hello / slack-aisaac / slack-handg / slack-codecast / slack-a2z / slack-rise。H&G 配下（白・H2T2・サンクチュアリ）は slack-handg と同一ワークスペース
+- Slack 公式 MCP（mcp.slack.com）と claude.ai 標準コネクタは 1 アカウント 1 ワークスペース固定のため不採用
+- トークンは Mac の `~/.config/slack-mcp/<ws>.token`。2026-10-10 時点で codecast / a2z / rise は未配置
+- 投稿・リアクションは播口本人名義になる。Claude は投稿前に文面と宛先を会話で確認する
+- 定期実行の要約はどの会社の内容でも Hello の #memo-yuki-hariguchi に投稿する。定期実行は韓国チーム週次のみ
+- 韓国チーム週次サマリ: 毎週日曜 19:00 JST。Hello の kr-* チャンネル（アラート・ログ・ニュースフィード系を除く）の直近 7 日分をスレッド込みで取得し、Opus で日本語要約（決定・方針 / 数字 / 問題 / 人事 / 播口への依頼）して投稿。実体は Mac の `~/.local/bin/kr-weekly/`、launchd ラベル ai.hello.kr-weekly。Mac が起動していないと動かない
+
 ## 用語
 
 （未記入）
