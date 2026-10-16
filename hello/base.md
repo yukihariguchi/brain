@@ -108,6 +108,7 @@ SO（2026-09-22）
 - HelloDining: 飲食店向け事業の総称。AutoReserve と Respo
 - AutoReserve / Respo / HelloX / HelloPay / RespoPay: 上記「事業」
 - HelloAlpha: ヘッジファンド事業
+- Hello Assistant（HA）: 汎用パーソナルアシスタント。社内の呼称。消費者向けのサービス名は Hello（2026-10-16）
 - 運用部隊: AutoReserve・HelloX の電話オペレーションを担う 200人規模のチーム
 
 参考リンク

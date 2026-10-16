@@ -31,7 +31,7 @@ brain = Claude が読むための前提集。事実と骨格だけ置く。
 - Hello の人材エージェント契約 → hello/hr.md
 - HelloDining（Hello の飲食店向け事業。AutoReserve / Respo）→ hello/hello-dining.md
 - HelloAlpha（Hello のヘッジファンド事業）→ hello/hello-alpha.md
-- Hello（Hello が出すパーソナルアシスタント。サービス名も Hello）→ hello/hello.md
+- Hello Assistant（HA。Hello が出すパーソナルアシスタント。消費者向けのサービス名は Hello）→ hello/hello.md
 - HelloPay（Hello の決済代行。エージェント決済の仕組み）→ hello/hello-pay.md
 - aisaac → aisaac/base.md
 - aisaac の人材エージェント契約 → aisaac/hr.md
@@ -55,7 +55,7 @@ brain = Claude が読むための前提集。事実と骨格だけ置く。
 
 ### 置き場ルール
 
-- 表記: 会社全体を指すときは「Hello, Inc.」、パーソナルアシスタントのサービスは「Hello」（2026-09-25）
+- 表記: 社内では会社は「Hello」、パーソナルアシスタントは「Hello Assistant」（略 HA）。消費者向けのサービス名は「Hello」のまま（2026-10-16。2026-09-25 の「Hello, Inc.」/「Hello」の書き分けは廃止）
 - 特定の会社の話 → その会社のファイル。各会社フォルダの基本ファイル（法人・体制・事業群）は base.md（2026-09-24。サービス名 Hello と衝突させないため）
 - 会社をまたぐ話 → me/me.md。テーマが大きいものは専用ファイル（例: hr.md）
 - 播口個人の話（居住・出国・家族・個人資産）→ me/。会社の話は入れない（H&G は handg/）
