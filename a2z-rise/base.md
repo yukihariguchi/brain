@@ -17,4 +17,4 @@ A2Z と Rise（同一グループ）の共通事項。事業固有は a2z/ と r
 
 - 利益の約 95% は Rise の myfans。海外の決済代行からの入金はすべて A2Z の香港子会社 Contents & Technology（C&T）に入る（ユーロ・ドル建て）
 - HGJP の分配金（14%）は C&T から HGSG の Wise に直接振り込まれる。通貨（ユーロ / 円）の内訳は HGSG の希望で C&T に分けてもらう
-- 契約上の受取人は HGJP。HGSG は収納代行で、HGJP は分配確定時に売上計上し、現金は HGSG への貸付金として持つ。HGSG 側の扱いは handg/base.md「A2Z 分配金の経路と HGSG への役務対価」
+- 契約上の受取人は HGJP。HGJP は分配金債権を HGSG に譲渡していて、HGSG が自社債権として受け取る。A2Z への通知はしない。HGJP ↔ HGSG の精算は handg/base.md「A2Z 分配金の経路と HGSG への役務対価」
