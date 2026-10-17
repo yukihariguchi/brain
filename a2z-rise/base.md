@@ -8,6 +8,7 @@ A2Z と Rise（同一グループ）の共通事項。事業固有は a2z/ と r
 - Rise: A2Z が 100% 保有（子会社）。myfans（アダルトサービス）を運営
 - Hello / aisaac / HGJP / AWSM との資本関係はない。関連会社でもない
 - 経営は松本氏から自分と田中（オーサム）が任されている
-- A2Z グループの毎月の営業利益を分配: HGJP 14% / AWSM JP 14% / aisaac 22%（要確認: 契約の形式・名義）
+- A2Z が持つ全事業（Rise を含む）は HGJP / AWSM JP / aisaac との共同事業契約。毎月の営業利益を分配する（2026-10-17 確認）
+  - aisaac 22% / AWSM JP 14% / HGJP 14% / A2Z 50%
 
 自分・田中は A2Z / Rise の登記上の役員ではない。公開情報で Hello / aisaac とつながる線はない。関係を出さない方針は me.md。
