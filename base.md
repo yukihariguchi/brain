@@ -128,7 +128,8 @@ HGSG の役務対価（3本。1本のグループ内役務提供契約にまと�
 
 調査結果（2026-10-17）: 「HGJP のために HGSG が送受金する」法形式は Wise 規約と SG の決済サービス法に抵触する。送金代行は購買代行に、収納代行は分配金債権の譲渡に変更済み（上の表）
 
-- Wise 利用規約 5.3: 口座は自社勘定のみで使う（not on behalf of any other person or entity）。AUP 1.2.2 は「第三者のための送金」「決済処理」を非対応業種に挙げる。AUP 1.2.1 はポルノ・性的サービスを非対応業種に挙げる（may be declined）。グループ会社のための送受金を認める規定は無い（https://wise.com/sg/legal/terms-of-use 、https://wise.com/acceptable-use-policy）
+- Wise ビジネス規約（SG、2026-08-21 版）12.1(f): 口座の資金は自社のものであること。AUP 1.2.2 は「第三者のための送金」「決済処理」を、1.2.1 はポルノ・性的サービスを非対応業種に挙げる（may be declined。禁止ではなく断ることがある）。グループ会社のための受取を認めた公式事例・審査基準は無い。Wise が認めても下の決済サービス法の問題は消えない（https://wise.com/sg/legal/terms-of-use-business 、https://wise.com/sg/legal/acceptable-use-policy）
+- 再調査（2026-10-17、2回目）: 収納代行で通る道は無し。決め手は決済サービス法。C&T（HK）→ HGSG を HGJP のために受ける行為は cross-border money transfer の (c) 号「arranging for the transmission of money from any country to another, whether as principal or agent」に入る可能性が高い。本業のある会社が決済サービスを行うと副業として営むと推定され、反証不可（s5(2)）。関連会社除外 2(e) は関連会社同士の支払のみで、支払人 C&T は A2Z 側なので親子化後も使えない。商業代理人除外は物品・役務の売買に限る。罰則は法人 25万 SGD 以下＋継続1日 2.5万 SGD 以下。債権の買取は PSA の対象外（自社債権の回収）、Moneylenders Act も法人のみへの貸付なら除外
 - SG Payment Services Act 2019: 関連会社の除外（First Schedule Part 2 para 2(e)）は「関連会社同士の間の支払」だけで、第三者（C&T・海外取引先）との送受金は対象外。同一個人が持つ兄弟会社は Companies Act s6 の related corporations に当たらない可能性が高い（2階建て後は親子で該当）。手数料を取って反復すると事業性あり（MAS FAQ Q13.2）
 - 共同事業契約の形式（任意組合 / 匿名組合 / 利益分配契約）は要確認。分配金の性質と源泉徴収の扱いが変わる
 - 播口の居住地が UK の場合、UK で業務をすると HGSG の UK PE・UK 居住法人認定のリスク
