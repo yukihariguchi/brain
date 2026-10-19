@@ -36,6 +36,7 @@ brain = Claude が読むための前提集。事実と骨格だけ置く。
 - HelloPay（Hello の決済代行。エージェント決済の仕組み）→ hello/hello-pay.md
 - aisaac → aisaac/base.md
 - aisaac の人材エージェント契約 → aisaac/hr.md
+- aisaac の WAMA BY（ロンドン日本食モール）出資検討 → aisaac/wama.md
 - H&G → handg/base.md
 - 株式会社白（Haku、HGJP が25%出資する飲食会社）→ handg/haku/base.md
 - 株式会社H2T2（H&G が50%出資。レストラン YAWYE を運営）→ handg/h2t2/base.md
