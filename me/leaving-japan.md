@@ -71,7 +71,7 @@ H&G の資本構成・資金の流れの組み替えは handg/base.md、Hello �
 
 ## aisaac 50% との順序（2026-10-19 方針。検討中）
 
-HGJP が AISAACJP を 50% まで買い増す計画（aisaac/base.md「資本の再編」）と出国の順序。
+HGJP が AISAACJP を 50% まで買い増す計画（aisaac/base.md「資本の再編」）と出国の順序。一連の流れの全体は reorg.md。
 
 - 出国前: マネマジ分（751株）の買い取り、Hello 他株主からの買い取り、リンク・ラス恋の aisaac 100% 化
 - 出国後: オーサム分（2,746株）の買い取り、2階建て（HGJP 株を HGSG へ売却）

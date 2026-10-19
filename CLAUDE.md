@@ -26,6 +26,7 @@ brain = Claude が読むための前提集。事実と骨格だけ置く。
 - 播口個人（会社ではない話）→ me/
   - 判断基準・進め方の好み → me/me.md
   - 日本出国（SG 移住）の計画と出国税・相続税の事実 → me/leaving-japan.md
+- aisaac 50:50・A2Z 分配の aisaac 集約・出国を一本にした順序と要確認（全体がまだ予定）→ reorg.md
 - 4社共通の HR（副業エンジニアのエージェント契約基準・雛形の要点・運用）→ hr.md
 - Hello → hello/base.md
 - Hello の人材エージェント契約 → hello/hr.md
