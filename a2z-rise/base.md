@@ -11,6 +11,8 @@ A2Z と Rise（同一グループ）の共通事項。事業固有は a2z/ と r
 - A2Z が持つ全事業（Rise を含む）は HGJP / AWSM JP / aisaac との共同事業契約。毎月の営業利益を分配する（2026-10-17 確認）
   - aisaac 22% / AWSM JP 14% / HGJP 14% / A2Z 50%
 
+- 2026-10-19 方針（検討中）: 上の 50% を全部 aisaac に付ける（aisaac 50% / A2Z 50%）。HGJP・AWSMJP の直接受取は無くし、HGJP は AISAACJP を 50% まで買い増して配当で受ける。詳細は aisaac/base.md「資本の再編」。supa の GPU を A2Z に買わせる案もある（A2Z の営業利益が減るので松本氏の同意と、A2Z ↔ supa の契約が外に出ない形が要る。要確認）
+
 自分・田中は A2Z / Rise の登記上の役員ではない。公開情報で Hello / aisaac とつながる線はない。関係を出さない方針は me.md。
 
 ## 資金の流れ（2026-10-17）
