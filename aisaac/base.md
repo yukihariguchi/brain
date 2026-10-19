@@ -15,6 +15,7 @@ AISAACJP。発行済 15,000株
 ## 関連法人
 
 - AISAACSG: HGSG 50% / AWSMSG 50%。AISAACJP（オーサム 68% / HGJP 27%）とは持分比率が違う
+- AISAACJP は SG の下に移さない（2026-10-19）。配当は直接保有でも SG 経由でも 5% で同じ。差が出る売却は aisaac には無く、移転は含み益 × 30% の課税と現物出資の手間だけ残る。aisaac から Hello・supa への投資は AISAACSG から出す（「資本の再編」）
 
 ## 資本の再編（2026-10-19 方針。検討中、樹神氏・田中との合意前）
 
@@ -43,7 +44,7 @@ aisaac 本体の変更
 - supa の GPU は aisaac でも A2Z でも買える。A2Z で買えるものは A2Z で買う方が aisaac の PL を傷めない
 - Hello に 1億円使っても月 4+2−1 = 5億円前後がプール。GPU に月 3億円（A2Z 2億、aisaac 1億）使っても aisaac に月 2億円残る見立て
 
-supa: 田中側の会社。GPU を使う事業（事業内容・現在の株主は要確認）。目標構成は 田中+AWSMJP 60% / 播口+HGJP 20% / メンバー 20%。Hello の目標構成は hello/base.md
+supa: 田中側の日本法人。GPU を使う事業（事業内容・現在の株主は要確認）。目標構成は 田中+AWSMSG 60% / 播口+HGSG 20% / メンバー 20%。法人分は SG で持つ（2026-10-19 決定。売却があり得るため）。aisaac からの投資は AISAACSG から出す。Hello の目標構成は hello/base.md
 
 ## 用語
 

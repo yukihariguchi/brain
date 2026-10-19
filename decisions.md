@@ -14,6 +14,13 @@
 
 ---
 
+## 2026-10-19 supa は SG 法人で持ち、aisaac からの投資は AISAACSG から出す。AISAACJP は SG の下に移さない
+
+- 決めたこと: supa（日本法人）の法人株主は HGSG / AWSMSG（目標 田中+AWSMSG 60% / 播口+HGSG 20% / メンバー 20%）。aisaac から Hello・supa に出す投資は AISAACSG から出し、資金は AISAACJP → AISAACSG の配当で上げる。AISAACJP の株主は HGJP / オーサムのまま。詳細は reorg.md
+- 却下した案: AISAACJP も AISAACSG の下に入れ、Hello と同じ SG 2階建てにする / supa を HGJP・AWSMJP で持つ / aisaac の投資を AISAACJP から出す
+- 理由: 配当は直接保有でも SG 経由でも 5% で同じ。差が出るのは売却（SG 0%、日本法人 30%）で、aisaac は売らず supa と Hello は売却があり得る。AISAACJP を移すと含み益 × 30%（50% 化後は原則評価でさらに増える）と現物出資の手間がかかる。AISAACJP から Hello に投資すると「Hello の株主は SG 法人3社」（2026-09-22）が崩れる
+- 実行前の要確認: supa の現株主と含み益 / 日星条約 13条で日本の事業譲渡類似課税が残るか / 田中が日本居住のうちに AWSMSG 経由で持つ場合の外国子会社合算税制
+
 ## 2026-10-19 Hello の他株主からの買い取りは HGSG が行う
 
 - 決めたこと: Hello の株主構成を整理する際（reorg.md）、他株主からの買い取りは HGSG が行う。2026-09-21「Hello 株は HGSG 一本」を維持。資金は HGJP → HGSG の貸付を想定
