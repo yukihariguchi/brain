@@ -44,7 +44,7 @@ aisaac 本体の変更
 - supa の GPU は aisaac でも A2Z でも買える。A2Z で買えるものは A2Z で買う方が aisaac の PL を傷めない
 - Hello に 1億円使っても月 4+2−1 = 5億円前後がプール。GPU に月 3億円（A2Z 2億、aisaac 1億）使っても aisaac に月 2億円残る見立て
 
-supa: 田中側の日本法人。GPU を使う事業（事業内容・現在の株主は要確認）。目標構成は 田中+AWSMSG 60% / 播口+HGSG 20% / メンバー 20%。法人分は SG で持つ（2026-10-19 決定。売却があり得るため）。aisaac からの投資は AISAACSG から出す。Hello の目標構成は hello/base.md
+supa: 田中側の日本法人。GPU を使う事業（事業内容・現在の株主は要確認）。目標構成は AWSMSG 60% / HGSG 20% / メンバー 20%（個人保有は残さない）。SG で持つ（2026-10-19 決定。売却があり得るため）。aisaac からの投資は AISAACSG から出す。Hello の目標構成は hello/base.md
 
 ## 用語
 
