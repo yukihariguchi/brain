@@ -20,7 +20,7 @@ Hello は「法人」と「事業」を分けて捉える。法人は国ごと�
 
 100%子会社:
 
-- Hello AI Limited（Hello UK、イギリス）: 434 St. Ann's Road, London, N15 3JH
+- Hello AI Limited（Hello UK、イギリス。会社番号 15113006）: WeWork, 5 Merchant Square, London, W2 1DP（2026-10-19 Companies House で確認。旧 434 St. Ann's Road, N15 3JH）
 - 주식회사 헬로한국（Hello KR、韓国）: 9F-112, 7 Teheran-ro 5-gil, Gangnam-gu, Seoul
 - 哈囉台灣網路科技股份有限公司（Hello TW、台湾）: 臺北市中山區南京東路一段15號三樓
 
