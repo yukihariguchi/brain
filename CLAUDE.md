@@ -51,6 +51,7 @@ brain = Claude が読むための前提集。事実と骨格だけ置く。
   - A2Z / Rise の HR（人事・採用・外部人材）→ a2z-rise/hr.md
   - A2Z 固有 → a2z-rise/a2z/base.md
   - Rise 固有 → a2z-rise/rise/base.md
+  - Rise（myfans）の決済代行（MobiusPay / CCBill の立て付け・料率・実績）→ a2z-rise/rise/payments.md
 - 決定の履歴 → decisions.md
 
 質問に関係するものだけ読む。全部読まない。
