@@ -6,9 +6,23 @@ myfans の海外向けカード決済に使う決済代行（PSP）の立て付�
 
 ## 全体（2026-10-22）
 
-- US の決済代行は 2 社。MobiusPay（EC Suite）は審査済みで決済を流している。CCBill は審査中で、料率は Addendum の見積もり段階
+- 決済代行は 3 社。waffo（香港）が現行。US は MobiusPay（EC Suite）が審査済みで決済を流し、CCBill は審査中で料率は Addendum の見積もり段階
 - 契約主体は Tokuneko Corp.（Torrance, CA。MobiusPay の請求書の宛先）。担当は Willian Hail（M.Hail）
 - 月次の決済明細は Rise Slack #corp-us-general のスレッドに M.Hail がアップしている（Mobius / EC Suite ポータルから）
+
+---
+
+## waffo（香港）
+
+現行の決済代行。ユーロ建て。
+
+### 確定（2026-10-22 播口。書面は未保存）
+
+| ブランド | 料率 |
+|---|---|
+| Visa / Mastercard | 7.3% + €0.30/件 |
+| JCB | 7.8% + €0.30/件 |
+| AMEX | 7.8% + €0.30/件 |
 
 ---
 
@@ -101,7 +115,7 @@ myfans の海外向けカード決済に使う決済代行（PSP）の立て付�
 ### 未確定（Slack・口頭）
 
 - FX Fee・Cross-Border Fee は 6.9% に含まれ、別途かからない（CCBill の回答を M.Hail が共有、2026-10-22。Addendum には明記なし）
-- 込み込み 7% なら waffo より安い（conan。waffo は現行の決済代行の 1 つ。料率は要確認）
+- 込み込み 7% なら waffo（Visa/MC 7.3% + €0.30）より安い（conan）
 
 料率交渉（2026-10-22。口頭ベース）
 
