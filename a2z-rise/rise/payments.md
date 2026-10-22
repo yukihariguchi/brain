@@ -52,7 +52,7 @@ myfans の海外向けカード決済に使う決済代行（PSP）の立て付�
 
 ### 確定（書面）
 
-請求は 2 本立て。処理手数料は EC Suite の statement で売上から差し引き、ゲートウェイ手数料は MobiusPay Inc が月次の請求書で ACH 回収する。
+2 層構造。EC Suite LLC がアクワイアラー（処理・入金・ブランド手数料の徴収）、MobiusPay Inc がゲートウェイ（myfans のサーバーからカード情報を受け、トークン化・不正検知・3DS を経て EC Suite に送る通信の入口）。請求も 2 本立てで、処理手数料は EC Suite の statement で売上から差し引き、ゲートウェイ手数料は MobiusPay Inc が月次の請求書で ACH 回収する。ゲートウェイは送った回数で課金するので、0 ドルオーソリも 1 回と数える。CCBill は一体型でゲートウェイ料が別に立たない（waffo は要確認）。
 
 処理手数料（出典: EC Suite LLC の月次 statement。Merchant # 6333999100023986。2026 年 9 月分）
 
