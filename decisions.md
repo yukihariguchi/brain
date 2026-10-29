@@ -14,6 +14,13 @@
 
 ---
 
+## 2026-10-29 全体像: aisaac 50:50 ＋ Hello 吸収合併 ＋ HelloAI を SG 法人 50:50 で新設
+
+- 決めたこと: ①aisaac を播口側・田中側 50:50 ②Hello を aisaac に吸収合併 ③aisaac は非上場で好きなことをグローバルにやる会社（採用基準を Hello の水準に、今いらない人は子会社へ）④別に HelloAI を立ち上げ、播口・田中はそこで本気の事業。HelloAI は HGSG / AWSMSG 50:50。詳細は reorg.md「全体像」
+- 却下した案: Hello と supa を SG 法人で持つ（10-19。Hello は HGSG 60% / AWSMSG 20% / メンバー 20%、supa は AWSMSG 60% / HGSG 20% / メンバー 20%）
+- 理由: Hello の赤字は aisaac で使い（大合併革命）、伸ばす事業は含み益の無い新法人で SG 法人が直接持つ
+- 要確認: supa の扱い / HelloAI の設立地 / Hello Assistant の事業を HelloAI に移すか（移すなら aisaac から時価）/ メンバー持分の設計 / Hello Assistant（HA）との名前の紛れ
+
 ## 2026-10-29 Hello を aisaac が 100% 取得し、田中の出国前に吸収合併する
 
 - 決めたこと: aisaac が Hello の全株（HGJP 45.0%・播口個人 14.3%・外部株主・メンバー）を取得し、田中の出国（2026-12）前に Hello を吸収合併する。100% 取得は播口の出国を待たず 11月上旬、公告 11月中旬、効力 12月中旬〜下旬。配当性向は 10% のまま。詳細は reorg.md「大合併革命」
