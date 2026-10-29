@@ -16,16 +16,27 @@ aisaac 50:50・A2Z 分配の aisaac 集約・播口の出国を一本で見る�
 1. aisaac の株を播口側（HGJP）・田中側（オーサム）で 50:50 にする
 2. Hello を aisaac に吸収合併する（「大合併革命」）
 3. aisaac は非上場のまま、好きなことをグローバルにやる会社にする。採用基準は Hello の水準に引き上げ、今いらない人は子会社に移す
-4. 別に HelloAI を立ち上げ、播口・田中はそこで本気の事業をやる。HelloAI は HGSG / AWSMSG で 50:50
+4. 別に HelloAI（日本法人。一旦日本で考える）を立ち上げ、播口・田中はそこで本気の事業をやる。HelloAI は HGSG / AWSMSG で 50:50。事業は 2つ: Hello（パーソナルアシスタント。今の Hello Assistant を Hello から移す）と HelloCloud（GCP / AWS のようなサーバークラウド）
+5. supa は「aisaac computing」に改名し、データセンターに常駐してサーバーを保守する人たち専用の会社にする
 
-10-19 の「Hello と supa を SG 法人で持つ」（Hello は HGSG 60% / AWSMSG 20% / メンバー 20%、supa は AWSMSG 60% / HGSG 20% / メンバー 20%）はこれで置き換え。要確認: supa の扱い / HelloAI の設立地（SG か日本か）/ HelloAI に Hello Assistant の事業を移すのか（移すなら aisaac から時価で、含み益に約 30%）/ メンバーの持分は HelloAI 側で設計するか / 名前が Hello Assistant（HA）と紛れないか
+名前: HA（Hello Assistant）を HelloAI に移した後は、会社が HelloAI、プロダクトが「Hello」。HA の呼称はそこで廃止（2026-10-29）
+
+10-19 の「Hello と supa を SG 法人で持つ」（Hello は HGSG 60% / AWSMSG 20% / メンバー 20%、supa は AWSMSG 60% / HGSG 20% / メンバー 20%）はこれで置き換え。
+
+要確認
+
+- HA を Hello から HelloAI に移す時期と形。合併前に Hello から事業譲渡するか、合併後に aisaac から出すか。どちらも時価で、譲渡益が Hello の欠損金 20億円を同額だけ食う（HA の時価が 5億円なら aisaac で使える欠損金は 15億円）。HelloAI に代金の資金が要る
+- 合併に実体を残す。HA を抜いた後の Hello（HelloDining / HelloX / HelloPay と 200人規模の運用部隊）が aisaac に入ることが、欠損金目当ての合併ではない説明の柱
+- HelloAI が日本法人だと、HGSG / AWSMSG が HelloAI 株を売るとき日本で課税される（事業譲渡類似: 25% 以上保有・年 5% 以上売却。日星条約 13条でも残る）。上場後に年 5% 未満ずつ売るなら回避
+- aisaac computing の株主（aisaac 100% か）。supa の GPU と HelloCloud の関係（GPU は誰が持ち、誰が顧客に売るか）
+- メンバーの持分は HelloAI 側で設計するか
 
 ## 発端と目標（2026-10-19 方針。樹神氏・田中との合意前）
 
 - 発端: A2Z の分配 50%（aisaac 22% / AWSMJP 14% / HGJP 14%）を全部 aisaac に付け、Hello に使う資金は aisaac に集める。代わりに HGJP の AISAACJP 持分を 50% にする
 - AISAACJP の目標: HGJP 50% / オーサム 50%。HGJP が買うのはオーサムから 2,746株、マネマジから 751株（全株）
 - Hello の目標: aisaac 100% → 吸収合併（2026-10-29。10-19 の HGSG 60% / AWSMSG 20% / メンバー 20% を撤回）
-- supa（日本法人）: 10-19 の目標（AWSMSG 60% / HGSG 20% / メンバー 20%）は 10-29 の全体像で置き換え。扱いは要確認
+- supa（日本法人）: 10-19 の目標（AWSMSG 60% / HGSG 20% / メンバー 20%）は 10-29 の全体像で置き換え。aisaac computing に改名し、データセンター常駐の保守要員の会社にする
 - 播口・田中の個人保有は残さない。出国後の個人保有は相続（国内財産）・売却（FIG 後 UK 24%）・配当（源泉 10%）のどれも SG 法人より不利。AWSMSG 側は田中の判断。田中は US に FIG が無いので AWSMSG から個人へは配当せず貯める（2026-10-25）
 - リンク・ラス恋の aisaac 100% 化はやらない（2026-10-24。10-19 案を取り下げ）
 - 田中も 2026-12 に出国予定。移住先は US（2026-10-25。時期を確定）。2026-12 にシンガポールへ移住し、US のビザ（2027-02 頃の見込み）が取れ次第シンガポールから US へ（2026-10-28。10-26 の「2〜3週間海外、その後 US 入国まで日本」案を置き換え。出国税の基準日は 12月で確定し、出国日の認定リスクは消えた）。構造は播口側と基本同じ。ただし US には UK の FIG のような新規居住者の非課税制度が無く、全世界所得課税。AWSMSG が US の CFC 税制（Subpart F / GILTI）の対象になり、AWSMSG の受取配当や売却益が分配前に田中個人に課税される可能性がある → US の税務アドバイザーに要確認。A2Z 分配を aisaac に寄せると AISAACJP の価値が上がるので、先に持分を揃えないと田中の出国税が無駄に増える
@@ -149,7 +160,7 @@ aisaac が Hello の株を 100% 取得し、田中の出国前に Hello を吸�
 - 外部株主が全員売るか、価格
 - 事業関連性要件（aisaac の IT 事業と Hello）の当てはめ。税理士に確認
 - 田中の出国日と合併の効力発生日の前後
-- 合併後の Hello 事業の箱（aisaac の事業部のままか、HelloAI に移すか）
+- HA を HelloAI に移す時期と形（上の「全体像」要確認）。HelloDining / HelloX / HelloPay は aisaac に残る前提
 
 Hello 株を HGSG で持つ理由として 10-19〜10-24 に書いた「配当はどこでも 5%、売却は HGSG 0% / HGJP 30%」は decisions.md に残っている。Hello を売る前提を捨てたので使わない。
 

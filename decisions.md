@@ -14,12 +14,12 @@
 
 ---
 
-## 2026-10-29 全体像: aisaac 50:50 ＋ Hello 吸収合併 ＋ HelloAI を SG 法人 50:50 で新設
+## 2026-10-29 全体像: aisaac 50:50 ＋ Hello 吸収合併 ＋ HelloAI（日本法人、HGSG / AWSMSG 50:50）を新設 ＋ supa は aisaac computing に
 
-- 決めたこと: ①aisaac を播口側・田中側 50:50 ②Hello を aisaac に吸収合併 ③aisaac は非上場で好きなことをグローバルにやる会社（採用基準を Hello の水準に、今いらない人は子会社へ）④別に HelloAI を立ち上げ、播口・田中はそこで本気の事業。HelloAI は HGSG / AWSMSG 50:50。詳細は reorg.md「全体像」
-- 却下した案: Hello と supa を SG 法人で持つ（10-19。Hello は HGSG 60% / AWSMSG 20% / メンバー 20%、supa は AWSMSG 60% / HGSG 20% / メンバー 20%）
+- 決めたこと: ①aisaac を播口側・田中側 50:50 ②Hello を aisaac に吸収合併 ③aisaac は非上場で好きなことをグローバルにやる会社（採用基準を Hello の水準に、今いらない人は子会社へ）④別に HelloAI（一旦日本法人）を立ち上げ、播口・田中はそこで本気の事業。HelloAI は HGSG / AWSMSG 50:50。事業は Hello（今の Hello Assistant を移す。プロダクト名は「Hello」、HA の呼称は廃止）と HelloCloud（サーバークラウド）⑤supa は「aisaac computing」に改名し、データセンター常駐の保守要員専用の会社にする。詳細は reorg.md「全体像」
+- 却下した案: Hello と supa を SG 法人で持つ（10-19。Hello は HGSG 60% / AWSMSG 20% / メンバー 20%、supa は AWSMSG 60% / HGSG 20% / メンバー 20%）/ HelloAI を SG で作る（一旦見送り）
 - 理由: Hello の赤字は aisaac で使い（大合併革命）、伸ばす事業は含み益の無い新法人で SG 法人が直接持つ
-- 要確認: supa の扱い / HelloAI の設立地 / Hello Assistant の事業を HelloAI に移すか（移すなら aisaac から時価）/ メンバー持分の設計 / Hello Assistant（HA）との名前の紛れ
+- 要確認: HA を移す時期と形（譲渡益が欠損金を同額食う。HelloAI の資金）/ 合併に残す実体（Dining / X / Pay と運用部隊）/ 日本法人の HelloAI 株を SG 法人が売るときの日本課税（事業譲渡類似）/ aisaac computing の株主と GPU の持ち主 / メンバー持分の設計
 
 ## 2026-10-29 Hello を aisaac が 100% 取得し、田中の出国前に吸収合併する
 
