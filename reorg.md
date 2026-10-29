@@ -5,7 +5,7 @@ aisaac 50:50・A2Z 分配の aisaac 集約・播口の出国を一本で見る�
 役割分け（2026-10-24）
 
 - このファイル: 事実・決定・理由（何を・なぜ）
-- Notion「出国 × aisaac 50:50 TODO」: 順序・進捗・実行前に調べること（いつ・どこまで）。田中も読む前提で書く
+- Notion「大合併革命」（旧名 出国 × aisaac 50:50 TODO）: 順序・進捗・実行前に調べること（いつ・どこまで）。田中も読む前提で書く
   - https://app.notion.com/p/helloincai/403644312c5c807d8b1dcee38096ab85
 - 決まったら decisions.md に記録し、Notion の該当 TODO にチェック
 

@@ -25,7 +25,7 @@ brain = Claude が読むための前提集。事実と骨格だけ置く。
 
 - 播口個人（会社ではない話）→ me/
   - 判断基準・進め方の好み → me/me.md
-- グループ再編と出国（aisaac 50:50・A2Z 分配の aisaac 集約・Hello の aisaac への吸収合併・播口の UK 出国の事実と決定・理由。順序と進捗は Notion「出国 × aisaac 50:50 TODO」）→ reorg.md
+- グループ再編と出国（aisaac 50:50・A2Z 分配の aisaac 集約・Hello の aisaac への吸収合併・播口の UK 出国の事実と決定・理由。順序と進捗は Notion「大合併革命」（旧名 出国 × aisaac 50:50 TODO））→ reorg.md
 - 4社共通の HR（副業エンジニアのエージェント契約基準・雛形の要点・運用）→ hr.md
 - Hello → hello/base.md
 - Hello の人材エージェント契約 → hello/hr.md
