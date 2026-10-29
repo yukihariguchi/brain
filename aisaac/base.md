@@ -19,7 +19,7 @@ AISAACJP。発行済 15,000株
 
 ## 資本の再編（2026-10-19 方針。検討中、樹神氏・田中との合意前）
 
-発端: A2Z の分配金（aisaac 22% / AWSMJP 14% / HGJP 14% = 50%）を全部 aisaac に付け、Hello と supa に使う資金は aisaac に集める。その代わり HGJP の AISAACJP 持分を 50% にする。Hello は aisaac が 100% 取得して吸収合併する（2026-10-29。10-24 の「aisaac は Hello の株を持たない」「今の Hello 株は AWSMSG / HGSG へ」を置き換え。理由と順序は reorg.md「Red Shift」）。supa の株は持たない。
+発端: A2Z の分配金（aisaac 22% / AWSMJP 14% / HGJP 14% = 50%）を全部 aisaac に付け、Hello と supa に使う資金は aisaac に集める。その代わり HGJP の AISAACJP 持分を 50% にする。Hello は aisaac が 100% 取得して吸収合併する（2026-10-29。10-24 の「aisaac は Hello の株を持たない」「今の Hello 株は AWSMSG / HGSG へ」を置き換え。理由と順序は reorg.md「大合併革命」）。supa の株は持たない。
 
 目標の資本構成: HGJP 50% / オーサム 50%（7,500株ずつ）
 
