@@ -17,7 +17,7 @@ aisaac 50:50・A2Z 分配の aisaac 集約・播口の出国を一本で見る�
 2. Hello を aisaac に吸収合併する（「大合併革命」）
 3. aisaac は非上場のまま、好きなことをグローバルにやる会社にする。採用基準は Hello の水準に引き上げ、今いらない人は子会社に移す
 4. 別に HelloAI（日本法人）を立ち上げ、播口・田中はそこで本気の事業をやる。事業は 2つ: Hello（パーソナルアシスタント。今の Hello Assistant を移す）と HelloCloud（GCP / AWS のようなサーバークラウド）。当初は aisaac の 100% 子会社で始め、赤字を aisaac の黒字に当てる。外部調達や黒字化の前（時価が付く前）に HGSG / AWSMSG へ各 50% を時価で移す（2026-10-30。10-29 の「最初から HGSG / AWSMSG 50:50」を置き換え）
-5. supa は「HelloComputing」に改名し、データセンターに常駐してサーバーを保守する人たち専用の会社にする。置き場は HelloAI の下（2026-10-30。10-29 の aisaac computing から名前を変更。同日に aisaac の下 → HelloAI の下に変更）。supa は田中側の会社なので、HelloAI が株を買う取引が要る（GPU と売上があるので時価は 0 にならない）。樹神氏に渡す supa 1% との整合も要確認
+5. supa は「HelloComputing」に改名し、データセンターに常駐してサーバーを保守する人たち専用の会社にする（人だけの会社。GPU などの資産は持たない）。置き場は HelloAI の下（2026-10-30。10-29 の aisaac computing から名前を変更。同日に aisaac の下 → HelloAI の下に変更）。supa は田中側の会社なので、HelloAI が株を買う取引が要る（時価は純資産に近い）。樹神氏に渡す supa 1% との整合も要確認
 6. HelloFinancial（HelloPay。決済・資金移動）、HelloComm（旧 HelloX。電話・SMS）、ArtX は HelloAI ではなく aisaac の下に置く。HelloFinancial・HelloComm は新設の会社（HelloComm は 2026-10-30 に「当面事業」から変更）、ArtX は当面 aisaac の事業でいずれ会社にする。HelloFinancial と HelloComm は競合が導入を嫌がるため、aisaac の子会社だと表に見せない。株主は登記に出ないが役員は出るので、播口・田中を代表や役員に入れない（登録簿に役員名が載る割賦販売法・資金移動業も同じ）。Hello 冠を付けるが HelloAI と資本を分けるのは、HelloAI が上場・調達する可能性があるため。HelloAI が上場しないことになれば HelloAI の配下に付ける案もある（2026-10-30）
 
 体制（会社ごとの役職・責任者）は Notion「大革命 — 会社整理」（https://app.notion.com/p/helloincai/408644312c5c807d9107f2a34b1f8419）。検討中なので brain には写さない
@@ -34,7 +34,7 @@ aisaac 50:50・A2Z 分配の aisaac 集約・播口の出国を一本で見る�
 - aisaac → HelloAI の資金は出資でなく貸付にする（純資産を増やさず、株の時価を低く保つ）
 - 合併に実体を残す。HA を抜いた後の Hello（HelloDining / HelloX / HelloPay と 200人規模の運用部隊）が aisaac に入ることが、欠損金目当ての合併ではない説明の柱
 - HelloAI が日本法人だと、HGSG / AWSMSG が HelloAI 株を売るとき日本で課税される（事業譲渡類似: 25% 以上保有・年 5% 以上売却。日星条約 13条でも残る）。上場後に年 5% 未満ずつ売るなら回避
-- HelloComputing の株主構成（HelloAI 100% にするか）と supa 株の買い取り（時価・売り手）。supa の GPU と HelloCloud の関係（GPU は誰が持ち、誰が顧客に売るか）
+- HelloComputing の株主構成（HelloAI 100% にするか）と supa 株の買い取り（時価・売り手。HelloComputing は人だけの会社で資産を持たないので時価は純資産に近い）。GPU は HelloAI JP が持つ（2026-10-30）。減価償却が通算で aisaac の所得から落ちる。通算離脱時に含み損のある資産が時価評価の対象になるか（法人税法 64条の13）は税理士に要確認
 - メンバーの持分は HelloAI 側で設計するか
 
 ## 発端と目標（2026-10-19 方針。樹神氏・田中との合意前）
