@@ -14,9 +14,9 @@
 
 ---
 
-## 2026-10-30 HelloAI は当初 aisaac 100% 子会社。Hello 冠の会社は aisaac の下。supa は HelloComputing
+## 2026-10-30 HelloAI は当初 aisaac 100% 子会社。HelloFinancial・HelloComm は aisaac の下。supa は HelloComputing として HelloAI の下
 
-- 決めたこと: HelloAI は aisaac の 100% 子会社で始め、赤字を aisaac の黒字に当てる。外部調達や黒字化の前に HGSG / AWSMSG へ各 50% を時価で移す。HelloAI の事業は Hello と HelloCloud。HelloFinancial（新設会社）・HelloComm（当面事業、いずれ会社）・ArtX（同）・HelloComputing（supa を改名）は HelloAI ではなく aisaac の下。体制は Notion「大革命 — 会社整理」
+- 決めたこと: HelloAI は aisaac の 100% 子会社で始め、赤字を aisaac の黒字に当てる。外部調達や黒字化の前に HGSG / AWSMSG へ各 50% を時価で移す。HelloAI の事業は Hello と HelloCloud。HelloFinancial（新設会社）・HelloComm（新設会社。同日に「当面事業」から変更）・ArtX（当面事業、いずれ会社）は HelloAI ではなく aisaac の下。HelloComputing（supa を改名）は HelloAI の下（同日に aisaac の下から変更）。HelloFinancial・HelloComm は aisaac の子会社だと表に見せないので、播口・田中は役員に入れない。体制は Notion「大革命 — 会社整理」
 - 却下した案: HelloAI を最初から HGSG / AWSMSG 50:50 で作る（10-29。赤字を aisaac に当てられない）/ Hello 冠の会社を HelloAI の下に置く（HelloAI が上場・調達する可能性があるため分ける。上場しないなら戻す案は残す）/ supa の名前を aisaac computing（10-29）
 - 理由: HelloAI はしばらく赤字で、aisaac の所得（A2Z 分配）と相殺したい。SG 法人へは時価が付く前に移せば税がほぼ出ない
 - 補足（2026-10-30）: aisaac はグループ通算を選択済みなので、HelloAI は設立日から通算子法人。初年度の赤字から相殺できる。事業部で始める案は不要
