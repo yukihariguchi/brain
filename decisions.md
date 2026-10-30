@@ -14,6 +14,13 @@
 
 ---
 
+## 2026-10-30 法人の箱の使い分け: 事業は JP、持つのは SG、投資は aisaac SG、aisaac の下は売らない
+
+- 決めたこと: 日本の事業と日本の会社の 100% 買収は aisaac JP（通算）。海外展開は各事業の下（HelloFinancial JP → UK）。海外で生まれる新規事業は aisaac その国（親は aisaac JP）。少数の投資（海外、日本は 25% 未満）と税率 20% 未満の国の買収は aisaac SG（兄弟のまま）。売る・調達する可能性がある事業は HelloAI 側に置き、価値が付く前に HelloAI SG（HGSG / AWSMSG 50:50）の下へ出す。aisaac の下に入れた事業は売らない（上場は可）。GPU は HelloAI JP が持つ。詳細は reorg.md「全体像」「箱の使い分け」
+- 却下した案: SG を事業の頭にして利益を 17% にする（SG に住んで決める幹部がいない。利益は人と判断がある国に残る。既存 IP の移転は時価 × 30% と所得相応性基準）/ aisaac SG を aisaac JP の子会社にする（投資益が合算税制で 30%）/ SG を aisaac JP の親にする（含み益 × 30%、利点なし）/ 国ごとの持株会社（相殺の利点が小さく事業の塊が崩れる）/ HelloFinancial・HelloComm に SG ヘッド（売らないので不要）
+- 理由: 利益は稼いだ国で課税され、法人の置き方では動かない。動くのは「持つ」側の配当（5% か 0%）と売却益（30% か 0%）だけで、それは SG 持株と HelloAI SG で取れる。赤字を掘る事業は JP の通算で落とす方が確実
+- 確認済み（播口）: 田中側の US の CFC は田中側で対応済み / A2Z の利益の所在は日本が主 / Hello の欠損金の引き継ぎ要件は問題なし
+
 ## 2026-10-30 HelloAI は当初 aisaac 100% 子会社。HelloFinancial・HelloComm は aisaac の下。supa は HelloComputing として HelloAI の下
 
 - 決めたこと: HelloAI は aisaac の 100% 子会社で始め、赤字を aisaac の黒字に当てる。外部調達や黒字化の前に HGSG / AWSMSG へ各 50% を時価で移す。HelloAI の事業は Hello と HelloCloud。HelloFinancial（新設会社）・HelloComm（新設会社。同日に「当面事業」から変更）・ArtX（当面事業、いずれ会社）は HelloAI ではなく aisaac の下。HelloComputing（supa を改名）は HelloAI の下（同日に aisaac の下から変更）。HelloFinancial・HelloComm は aisaac の子会社だと表に見せないので、播口・田中は役員に入れない。体制は Notion「大革命 — 会社整理」
