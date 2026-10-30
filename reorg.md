@@ -16,8 +16,11 @@ aisaac 50:50・A2Z 分配の aisaac 集約・播口の出国を一本で見る�
 1. aisaac の株を播口側（HGJP）・田中側（オーサム）で 50:50 にする
 2. Hello を aisaac に吸収合併する（「大合併革命」）
 3. aisaac は非上場のまま、好きなことをグローバルにやる会社にする。採用基準は Hello の水準に引き上げ、今いらない人は子会社に移す
-4. 別に HelloAI（日本法人。一旦日本で考える）を立ち上げ、播口・田中はそこで本気の事業をやる。HelloAI は HGSG / AWSMSG で 50:50。事業は 2つ: Hello（パーソナルアシスタント。今の Hello Assistant を Hello から移す）と HelloCloud（GCP / AWS のようなサーバークラウド）
-5. supa は「aisaac computing」に改名し、データセンターに常駐してサーバーを保守する人たち専用の会社にする
+4. 別に HelloAI（日本法人）を立ち上げ、播口・田中はそこで本気の事業をやる。事業は 2つ: Hello（パーソナルアシスタント。今の Hello Assistant を移す）と HelloCloud（GCP / AWS のようなサーバークラウド）。当初は aisaac の 100% 子会社で始め、赤字を aisaac の黒字に当てる。外部調達や黒字化の前（時価が付く前）に HGSG / AWSMSG へ各 50% を時価で移す（2026-10-30。10-29 の「最初から HGSG / AWSMSG 50:50」を置き換え）
+5. supa は「HelloComputing」に改名し、データセンターに常駐してサーバーを保守する人たち専用の会社にする（2026-10-30。10-29 の aisaac computing から名前を変更）
+6. HelloFinancial（HelloPay。決済・資金移動）、HelloComm（旧 HelloX。通信 API）、ArtX は HelloAI ではなく aisaac の下に置く。HelloFinancial は新設の会社、HelloComm・ArtX は当面 aisaac の事業でいずれ会社にする。Hello 冠を付けるが HelloAI と資本を分けるのは、HelloAI が上場・調達する可能性があるため。HelloAI が上場しないことになれば HelloAI の配下に付ける案もある（2026-10-30）
+
+体制（会社ごとの役職・責任者）は Notion「大革命 — 会社整理」（https://app.notion.com/p/helloincai/408644312c5c807d9107f2a34b1f8419）。検討中なので brain には写さない
 
 名前: HA（Hello Assistant）を HelloAI に移した後は、会社が HelloAI、プロダクトが「Hello」。HA の呼称はそこで廃止（2026-10-29）
 
@@ -25,10 +28,12 @@ aisaac 50:50・A2Z 分配の aisaac 集約・播口の出国を一本で見る�
 
 要確認
 
-- HA を Hello から HelloAI に移す時期と形。合併前に Hello から事業譲渡するか、合併後に aisaac から出すか。どちらも時価。播口の見立ては時価 0（赤字で超過収益力なし。2026-10-29）。0 なら欠損金は減らず、HelloAI に代金の資金も要らない。要確認: 税務上 0 で通るか。関係会社間なので 0 より高いと見られると、Hello 側は譲渡益で欠損金を食い、HelloAI 側は受贈益に法人税 約 30%（HelloAI に欠損金は無い）。根拠に HA 単体の損益・事業計画・できれば第三者評価を残す。合併前の Hello の調達時の評価額が参照されないかも確認
+- HA を HelloAI に移す形。HelloAI が aisaac の 100% 子会社なら、合併後に aisaac から移すのはグループ内の譲渡で損益は繰り延べ、寄附金・受贈益も中立（グループ法人税制）。時価の問題は HelloAI 株を HGSG / AWSMSG へ売る時に出る。播口の見立ては HA の時価 0（赤字で超過収益力なし。2026-10-29）。売却前にラウンドの価格が付くとそれが時価になるので、売るのはタームシートの 6〜12ヶ月前
+- HelloAI の赤字を aisaac に当てる手段。グループ通算は開始の 3ヶ月前までに申請（法人税法 64条の9）で、aisaac は 11月末決算なので最短 2027-12 期から。初年度（2026-12〜2027-11）の赤字を当てるなら、HelloAI を会社にせず aisaac の事業部で始めて 2027-12-01 に新設分割する案がある。通算は aisaac の 100% 子会社全部が入り、中小の特例・開始時の時価評価は税理士に要確認
+- aisaac → HelloAI の資金は出資でなく貸付にする（純資産を増やさず、株の時価を低く保つ）
 - 合併に実体を残す。HA を抜いた後の Hello（HelloDining / HelloX / HelloPay と 200人規模の運用部隊）が aisaac に入ることが、欠損金目当ての合併ではない説明の柱
 - HelloAI が日本法人だと、HGSG / AWSMSG が HelloAI 株を売るとき日本で課税される（事業譲渡類似: 25% 以上保有・年 5% 以上売却。日星条約 13条でも残る）。上場後に年 5% 未満ずつ売るなら回避
-- aisaac computing の株主（aisaac 100% か）。supa の GPU と HelloCloud の関係（GPU は誰が持ち、誰が顧客に売るか）
+- HelloComputing の株主（aisaac 100% か）。supa の GPU と HelloCloud の関係（GPU は誰が持ち、誰が顧客に売るか）
 - メンバーの持分は HelloAI 側で設計するか
 
 ## 発端と目標（2026-10-19 方針。樹神氏・田中との合意前）

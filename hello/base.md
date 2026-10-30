@@ -30,7 +30,7 @@ Hello は「法人」と「事業」を分けて捉える。法人は国ごと�
 
 - Hello SG 親会社化（2027年の株式交換、UK / KR / TW 子会社の Hello SG 下への移転、執行役員の SG 移住。2026-09-22 方針）は撤回（2026-10-24）。Hello JP が親会社のまま。子会社を売る計画が無く、配当の差も小さいため。decisions.md 参照
 - aisaac が全株を取得し、2026-12（田中の出国前）に吸収合併する（2026-10-29 方針）。10-19 の「HGSG 60% / AWSMSG 20% / メンバー 20%」と 10-24 の「aisaac は Hello 株を持たない」は撤回。狙いは繰越欠損金 約 20億円を aisaac の所得で使うこと。理由・順序・要確認は reorg.md「大合併革命」
-- 合併後は Hello 単体の上場・売却は無い。播口・田中の本気の事業は別法人 HelloAI（日本法人、HGSG / AWSMSG 50:50）で立ち上げる（2026-10-29）。Hello Assistant は HelloAI に移し、プロダクト名は「Hello」になる。HelloAI はもう1つ HelloCloud（サーバークラウド）をやる。HelloDining / HelloX / HelloPay は aisaac に残る前提。移す時期・形・メンバー持分は要確認。全体像は reorg.md「全体像」
+- 合併後は Hello 単体の上場・売却は無い。播口・田中の本気の事業は別法人 HelloAI（日本法人。当初は aisaac 100% 子会社、調達・黒字化の前に HGSG / AWSMSG 50:50 へ。2026-10-30）で立ち上げる。Hello Assistant は HelloAI に移し、プロダクト名は「Hello」になる。HelloAI はもう1つ HelloCloud（サーバークラウド）をやる。HelloDining / HelloX / HelloPay は aisaac に残る前提。移す時期・形・メンバー持分は要確認。全体像は reorg.md「全体像」
 
 ### 法人の役割（2026-09-22 方針。Hello SG 親会社化の撤回で見直しが要る。HelloAlpha の IP の置き場（hello/hello-alpha.md）と合わせて要確認、2026-10-24）
 

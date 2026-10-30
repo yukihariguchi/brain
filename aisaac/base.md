@@ -21,7 +21,7 @@ AISAACJP。発行済 15,000株
 
 発端: A2Z の分配金（aisaac 22% / AWSMJP 14% / HGJP 14% = 50%）を全部 aisaac に付け、Hello に使う資金は aisaac に集める。その代わり HGJP の AISAACJP 持分を 50% にする。Hello は aisaac が 100% 取得して吸収合併する（2026-10-29。10-24 の「aisaac は Hello の株を持たない」「今の Hello 株は AWSMSG / HGSG へ」を置き換え。理由と順序は reorg.md「大合併革命」）。
 
-aisaac の位置づけ（2026-10-29）: 非上場のまま、好きなことをグローバルにやる会社。採用基準は Hello の水準に引き上げ、今いらない人は子会社に移す。播口・田中の本気の事業は別法人 HelloAI（HGSG / AWSMSG 50:50）でやる。全体像は reorg.md「全体像」。
+aisaac の位置づけ（2026-10-29）: 非上場のまま、好きなことをグローバルにやる会社。採用基準は Hello の水準に引き上げ、今いらない人は子会社に移す。播口・田中の本気の事業は別法人 HelloAI でやる（当初は aisaac 100% 子会社、調達・黒字化の前に HGSG / AWSMSG 50:50 へ。2026-10-30）。HelloFinancial・HelloComm・HelloComputing・ArtX は Hello 冠だが aisaac の下（2026-10-30）。全体像は reorg.md「全体像」。
 
 目標の資本構成: HGJP 50% / オーサム 50%（7,500株ずつ）
 
@@ -42,7 +42,7 @@ aisaac 本体の変更
 
 資金の見立て（変動する数字）は Notion「大合併革命」に置く（2026-10-24）。原則だけ残す: supa の GPU は A2Z で買えるものは A2Z で買う方が aisaac の PL を傷めない。
 
-supa → aisaac computing（2026-10-29）: 田中側の日本法人 supa を「aisaac computing」に改名し、データセンターに常駐してサーバーを保守する人たち専用の会社にする。10-19 の目標構成（AWSMSG 60% / HGSG 20% / メンバー 20%、SG で持つ）は撤回。株主構成（aisaac 100% にするか）と GPU の持ち主は要確認。全体像は reorg.md「全体像」
+supa → HelloComputing（2026-10-30。10-29 の aisaac computing から名前を変更）: 田中側の日本法人 supa を「HelloComputing」に改名し、データセンターに常駐してサーバーを保守する人たち専用の会社にする。10-19 の目標構成（AWSMSG 60% / HGSG 20% / メンバー 20%、SG で持つ）は撤回。株主構成（aisaac 100% にするか）と GPU の持ち主は要確認。全体像は reorg.md「全体像」
 
 ## 用語
 

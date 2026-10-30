@@ -14,6 +14,13 @@
 
 ---
 
+## 2026-10-30 HelloAI は当初 aisaac 100% 子会社。Hello 冠の会社は aisaac の下。supa は HelloComputing
+
+- 決めたこと: HelloAI は aisaac の 100% 子会社で始め、赤字を aisaac の黒字に当てる。外部調達や黒字化の前に HGSG / AWSMSG へ各 50% を時価で移す。HelloAI の事業は Hello と HelloCloud。HelloFinancial（新設会社）・HelloComm（当面事業、いずれ会社）・ArtX（同）・HelloComputing（supa を改名）は HelloAI ではなく aisaac の下。体制は Notion「大革命 — 会社整理」
+- 却下した案: HelloAI を最初から HGSG / AWSMSG 50:50 で作る（10-29。赤字を aisaac に当てられない）/ Hello 冠の会社を HelloAI の下に置く（HelloAI が上場・調達する可能性があるため分ける。上場しないなら戻す案は残す）/ supa の名前を aisaac computing（10-29）
+- 理由: HelloAI はしばらく赤字で、aisaac の所得（A2Z 分配）と相殺したい。SG 法人へは時価が付く前に移せば税がほぼ出ない
+- 要確認: グループ通算の開始時期（最短 2027-12 期。初年度は事業部で始める案）/ 移す時期の時価（ラウンド価格の 6〜12ヶ月前）/ aisaac → HelloAI の資金は貸付
+
 ## 2026-10-29 二人の定額の取り分を一人 3億円に（業務委託料 月 1,350万円、自由経費 6,600万円）
 
 - 決めたこと: 役員報酬 7,200万円（月 600万円。変更なし）、自由経費 6,600万円、業務委託料 1.62億円（月 1,350万円）。定額分は一人 3億円。配当は別（業績連動、性向 10%）
