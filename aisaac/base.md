@@ -44,7 +44,7 @@ aisaac 本体の変更
 
 資金の見立て（変動する数字）は Notion「大合併革命」に置く（2026-10-24）。原則だけ残す: supa の GPU は A2Z で買えるものは A2Z で買う方が aisaac の PL を傷めない。
 
-supa は無くす（2026-11-04。田中の 11-03 案を播口が了承。10-30 の「supa → HelloComputing として HelloAI の下」を置き換え）: aisaac への合併か、資本金だけ抜いて清算。supa は田中側の会社なので aisaac との合併は 100% 親子の無対価合併にならず、清算のほうが簡単。保守要員の役割は株式会社HelloCloud（旧 basemachina。aisaac 100% → HelloAI 100%。代表 高橋）が当面持つ。GPU と借入は HelloAI JP。supa の製品は eKYC をヤスラクで保守し続ける。CMS・supateam はクローズか A2Z にリードとして流すか未決（田中案はクローズ）。メンバーのメールは @cloud.hello.ai、人事制度は新 aisaac のコピー（田中 2026-11-03）。樹神氏に渡す予定だった supa 1% の代替は要確認。全体像は reorg.md「全体像」
+supa は無くす（2026-11-04。田中の 11-03 案を播口が了承。10-30 の「supa → HelloComputing として HelloAI の下」を置き換え）: aisaac への合併か、資本金だけ抜いて清算。supa は田中側の会社なので aisaac との合併は 100% 親子の無対価合併にならず、清算のほうが簡単。保守要員の役割は株式会社HelloCloud（旧 basemachina。aisaac 100% → HelloAI の設立直後に HelloAI 100%。通算子法人のまま。代表 高橋）が当面持つ。GPU と借入は HelloAI JP。supa の製品は eKYC をヤスラクで保守し続ける。CMS・supateam はクローズか A2Z にリードとして流すか未決（田中案はクローズ）。メンバーのメールは @cloud.hello.ai、人事制度は新 aisaac のコピー（田中 2026-11-03）。樹神氏に渡す予定だった supa 1% の代替は要確認。全体像は reorg.md「全体像」
 
 ## 用語
 
