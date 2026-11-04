@@ -14,6 +14,13 @@
 
 ---
 
+## 2026-11-04 HelloCloud は株式会社HelloCloud（旧 basemachina）が出す。supa は無くし、HelloComputing は作らない
+
+- 決めたこと: 田中側の basemachina を株式会社HelloCloud に商号変更し、HelloCloud はそこから出す（代表 高橋。開発・セールス・保守要員の会社で資産を持たない）。株は aisaac 100% → HelloAI 100%。GPU と借入は HelloAI JP が持ち、HelloCloud 社に貸す。supa は無くす（合併か清算）。HelloComputing は作らず、保守要員の役割は当面 HelloCloud 社。11/16 に HelloCloud 社名義でリリース、HelloAI 傘下の発表は後日。田中の 11-03 Slack 案を播口が了承
+- 却下した案: supa を HelloComputing に商号変更して HelloCloud を出す（11-02）/ HelloComputing を HelloAI の下に置く（10-30）/ GPU 購入の借入を HelloCloud 社に持たせる（田中の 11-03 案。GPU は HelloAI が持つ）
+- 理由: supa より basemachina のほうが実績とロゴをそのまま使える。aisaac 文脈と切り分ける。サーバーの賠償リスクを HelloAI 本体から切り離す
+- 要確認: 樹神氏への supa 1% の代替 / HelloAI → HelloCloud 社の GPU 利用料の形 / HelloCloud 社を HelloAI に移す時期 / CMS・supateam の扱い（クローズか A2Z に流すか）
+
 ## 2026-10-31 HGSG → HGJP、AWSMSG → AWSMJP の株式取得は外為法の事前届出で進める
 
 - 決めたこと: 事後報告で済むかの判断（AISAACJP 50% を HGJP の子会社と見るか）をせず、事前届出で進める。HGSG 分は 11/6 に日銀へ提出（待機 原則 30日 → 子会社化は 12/7 目安、短縮されれば 11月下旬）。AWSMSG 分は 12/4 提出、子会社化 1/15
