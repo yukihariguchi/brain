@@ -15,7 +15,7 @@ aisaac 50:50・A2Z 分配の aisaac 集約・播口の出国を一本で見る�
 
 1. aisaac の株を播口側（HGJP）・田中側（オーサム）で 50:50 にする
 2. Hello を aisaac に吸収合併する（「大合併革命」）
-3. aisaac は非上場のまま、好きなことをグローバルにやる会社にする。採用基準は Hello の水準に引き上げ、今いらない人は子会社に移す
+3. aisaac は非上場のまま、好きなことをグローバルにやる会社にする。採用基準は Hello の水準に引き上げ、今いらない人は子会社に移す。合併後に aisaac を株式会社WorldGroup に商号変更し、霜田・澤井を共同代表にする。株主は HGJP 50% / AWSMJP 50% のまま（2026-11-07。「WorldGroup を新設して aisaac を吸収合併する」案は却下。HGJP 50 / AWSMJP 50 の 2社は「同一の者による完全支配関係」にならず（一の者は単独の法人か個人とその親族。播口側と田中側は別）、50% ちょうどなので支配関係（50% 超）も無い。新設の WorldGroup に事業が無いので共同事業要件も満たせず非適格合併になり、Hello から引き継いだ欠損金 20億円が消え、株主にみなし配当、通算親法人も消える。別法人が要るなら WorldGroup を aisaac の 100% 子会社として作り逆さ合併する形だが、商号変更で足りる）
 4. 別に HelloAI（日本法人）を立ち上げ、播口・田中はそこで本気の事業をやる。事業は Hello（パーソナルアシスタント。今の Hello Assistant を移す）と HelloCloud（GCP / AWS のようなサーバークラウド）。HelloCloud は別会社の株式会社HelloCloud（田中側の basemachina を商号変更。aisaac 100% で、HelloAI の設立直後に aisaac から HelloAI へ株式譲渡して HelloAI 100% にする。間接保有でも aisaac の完全支配関係は続くので通算子法人のまま、譲渡損益はグループ内で繰り延べ（2026-11-04）。代表は高橋。クラウドの開発・セールスとデータセンター常駐の保守要員の会社で、資産を持たない）が出す。GPU と借入は HelloAI JP が持ち、HelloCloud 社に貸す。HelloComputing（旧 supa）は作らず、保守要員の役割は当面 HelloCloud 社が持つ。supa は無くす（aisaac への合併か、資本金だけ抜いて清算）（2026-11-04。田中の 11-03 案を播口が了承。10-30 の「HelloComputing（旧 supa）を HelloAI の下に置く」を置き換え）。当初は aisaac の 100% 子会社で始め、赤字を通算で aisaac の黒字に当てる。外部調達や黒字化の前（時価が付く前）に aisaac から HGSG / AWSMSG へ各 50% を時価で移す（2026-10-30。10-29 の「最初から HGSG / AWSMSG 50:50」を置き換え）。SG ヘッド（HelloAI SG）は挟まない（2026-10-31。年 5% 以上の売却もまとめて売る見込みも無いので、日本の事業譲渡類似の課税に当たらない。調達は新株発行なので持ち株の売却ではない）
 5. HelloFinancial（HelloPay。決済・資金移動）、HelloComm（旧 HelloX。電話・SMS）、ArtX は HelloAI ではなく aisaac の下。HelloFinancial・HelloComm は新設の会社、ArtX は当面事業でいずれ会社。競合が導入を嫌がるため aisaac の子会社だと表に見せない。株主は登記に出ないが役員は出るので、播口・田中を代表や役員に入れない（登録簿に役員名が載る割賦販売法・資金移動業も同じ）。Hello 冠だが HelloAI と資本を分けるのは、HelloAI が上場・調達する可能性があるため（2026-10-30）
 6. aisaac の下に入れた事業は売らない（上場はしてよい。売らなければ税は出ない）。売る・調達する可能性がある事業は最初から HelloAI 側に置く（2026-10-30）
@@ -51,7 +51,7 @@ aisaac 50:50・A2Z 分配の aisaac 集約・播口の出国を一本で見る�
 
 体制（会社ごとの役職・責任者）は Notion「大革命 — 会社整理」（https://app.notion.com/p/helloincai/408644312c5c807d9107f2a34b1f8419）。検討中なので brain には写さない
 
-名前: HA（Hello Assistant）を HelloAI に移した後は、会社が HelloAI、プロダクトが「Hello」。HA の呼称はそこで廃止（2026-10-29）
+名前: HA（Hello Assistant）を HelloAI に移した後は、会社が HelloAI、プロダクトが「Hello」。HA の呼称はそこで廃止（2026-10-29）。合併後の aisaac の社名は株式会社WorldGroup（2026-11-07。上の全体像 3）
 
 10-19 の「Hello と supa を SG 法人で持つ」（Hello は HGSG 60% / AWSMSG 20% / メンバー 20%、supa は AWSMSG 60% / HGSG 20% / メンバー 20%）はこれで置き換え。
 

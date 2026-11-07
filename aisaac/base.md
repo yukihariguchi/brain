@@ -23,7 +23,7 @@ AISAACJP。発行済 15,000株
 
 発端: A2Z の分配金（aisaac 22% / AWSMJP 14% / HGJP 14% = 50%）を全部 aisaac に付け、Hello に使う資金は aisaac に集める。その代わり HGJP の AISAACJP 持分を 50% にする。Hello は aisaac が 100% 取得して吸収合併する（2026-10-29。10-24 の「aisaac は Hello の株を持たない」「今の Hello 株は AWSMSG / HGSG へ」を置き換え。理由と順序は reorg.md「大合併革命」）。
 
-aisaac の位置づけ（2026-10-29）: 非上場のまま、好きなことをグローバルにやる会社。採用基準は Hello の水準に引き上げ、今いらない人は子会社に移す。播口・田中の本気の事業は別法人 HelloAI でやる（当初は aisaac 100% 子会社、調達・黒字化の前に HGSG / AWSMSG 50:50 へ。2026-10-30）。HelloFinancial・HelloComm・ArtX は Hello 冠だが aisaac の下。HelloComputing（旧 supa）は HelloAI の下（2026-10-30）。全体像は reorg.md「全体像」。
+aisaac の位置づけ（2026-10-29）: 非上場のまま、好きなことをグローバルにやる会社。採用基準は Hello の水準に引き上げ、今いらない人は子会社に移す。Hello の合併後に株式会社WorldGroup に商号変更し、共同代表は霜田・澤井（2026-11-07。新設の WorldGroup に aisaac を吸収させる案は非適格合併で欠損金が消えるため却下。reorg.md「全体像」3）。播口・田中の本気の事業は別法人 HelloAI でやる（当初は aisaac 100% 子会社、調達・黒字化の前に HGSG / AWSMSG 50:50 へ。2026-10-30）。HelloFinancial・HelloComm・ArtX は Hello 冠だが aisaac の下。HelloComputing（旧 supa）は HelloAI の下（2026-10-30）。全体像は reorg.md「全体像」。
 
 目標の資本構成: HGJP 50% / オーサム 50%（7,500株ずつ）
 

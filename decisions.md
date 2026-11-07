@@ -14,6 +14,14 @@
 
 ---
 
+## 2026-11-07 合併後の aisaac は株式会社WorldGroup に商号変更。共同代表は霜田・澤井
+
+- 決めたこと: Hello を aisaac に吸収合併した後、aisaac を株式会社WorldGroup に商号変更し、霜田・澤井を共同代表にする。株主は HGJP 50% / AWSMJP 50% のまま
+- 却下した案: HGJP / AWSMJP 50:50 で株式会社WorldGroup を新設し、そこへ aisaac を吸収合併する
+- 理由: 株主が同じでも HGJP 50 / AWSMJP 50 は「同一の者による完全支配関係」にならない（一の者は単独の法人か個人とその親族）。50% ちょうどなので支配関係（50% 超）も無く、新設法人に事業が無いので共同事業要件も満たせない。非適格合併になり、Hello から引き継いだ欠損金 20億円が消え、HGJP / AWSMJP にみなし配当、通算親法人も消える。商号変更なら税も手続きも最小
+
+---
+
 ## 2026-11-04 HelloCloud は株式会社HelloCloud（旧 basemachina）が出す。supa は無くし、HelloComputing は作らない
 
 - 決めたこと: 田中側の basemachina を株式会社HelloCloud に商号変更し、HelloCloud はそこから出す（代表 高橋。開発・セールス・保守要員の会社で資産を持たない）。株は aisaac 100% → HelloAI の設立直後に株式譲渡で HelloAI 100%（間接保有でも aisaac の通算子法人のまま。同日追記）。GPU と借入は HelloAI JP が持ち、HelloCloud 社に貸す。supa は無くす（合併か清算）。HelloComputing は作らず、保守要員の役割は当面 HelloCloud 社。11/16 に HelloCloud 社名義でリリース、HelloAI 傘下の発表は後日。田中の 11-03 Slack 案を播口が了承
