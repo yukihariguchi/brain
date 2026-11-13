@@ -11,7 +11,7 @@ WorldGroup は合併後の aisaac の商号（reorg.md「全体像」3）。会�
 ## スキーム
 
 1. Hello UK（Hello AI Limited。12/21 の合併で WorldGroup の 100% 子会社になる）が Revolut Business を契約する。プランは Scale
-2. Revolut のカードを播口・田中に発行する
+2. Revolut のカードを播口・田中に 2枚ずつ発行する。必要経費用（事業に必須の支出）と自由経費用（業務に関係はあるが必須ではない支出。aisaac/base.md）で分ける
 3. WorldGroup が楽天銀行の法人口座から、円のまま Hello UK の Revolut へ送る。月 1〜2回にまとめる
 4. Revolut の中で円をポンド・ユーロ・ドルに替える。平日に替える。月 £60,000（Scale の無料枠）まで
 5. Hello UK が自社名義のカードで払い、月次で WorldGroup に実費を請求する（立替）
@@ -24,6 +24,7 @@ WorldGroup は合併後の aisaac の商号（reorg.md「全体像」3）。会�
 - Hello UK は費用にせず立替金（親会社への債権）で計上する。経費にするのは WorldGroup
 - WorldGroup が先に送る資金は Hello UK の預り金。精算のたびに取り崩す
 - 証憑は領収書と月次の立替金精算書。WorldGroup が保存する
+- 自由経費のカードは 1件ごとに業務との関係を残す。私的な支出は載せない（日本は役員給与の認定、UK は現物給与で 45%）
 - 消費税: 海外の支出は対象外。日本国内で使った分は精算書と適格請求書で控除する
 - 「第三者のための支払い」にしない。Hello UK が自分の債務として買い、後で請求する（HGSG の購買代行と同じ整理。handg/base.md）
 - Revolut UK はマネーフォワードと直接つながらない。WorldGroup 側は月次の CSV 取込み
