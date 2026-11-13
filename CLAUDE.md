@@ -36,6 +36,7 @@ brain = Claude が読むための前提集。事実と骨格だけ置く。
 - aisaac → aisaac/base.md
 - aisaac の人材エージェント契約 → aisaac/hr.md
 - aisaac の WAMA BY（ロンドン日本食モール）出資検討 → aisaac/wama.md
+- WorldGroup（合併後の aisaac の商号）の海外経費（Hello UK の Revolut で立替・楽天銀行から円で送金）→ worldgroup/overseas-expense.md
 - H&G → handg/base.md
 - 株式会社白（Haku、HGJP が25%出資する飲食会社）→ handg/haku/base.md
 - 株式会社H2T2（H&G が50%出資。レストラン YAWYE を運営）→ handg/h2t2/base.md
