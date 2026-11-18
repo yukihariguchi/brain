@@ -32,8 +32,8 @@ brain = Claude が読むための前提集。事実と骨格だけ置く。
 - HelloDining（Hello の飲食店向け事業。AutoReserve / Respo）→ hello/hello-dining.md
 - HelloAlpha（Hello のヘッジファンド事業）→ hello/hello-alpha.md
 - HelloPay（Hello の決済代行。エージェント決済の仕組み）→ hello/hello-pay.md
-- HelloAI（新設する株式会社HelloAI。立て付けは reorg.md「全体像」）→ helloai/（2026-11-18。Hello Assistant 事業を HelloAI に移すので hello/ から移動）
-  - Hello Assistant（HA。パーソナルアシスタント。消費者向けのサービス名は Hello）→ helloai/hello-assistant.md
+- HelloAI（新設する株式会社HelloAI。立て付けは reorg.md「全体像」）→ helloai/（2026-11-18。パーソナルアシスタントの事業を HelloAI に移すので hello/ から移動）
+  - Hello（パーソナルアシスタント）→ helloai/hello.md
 - aisaac → aisaac/base.md
 - aisaac の人材エージェント契約 → aisaac/hr.md
 - aisaac の WAMA BY（ロンドン日本食モール）出資検討 → aisaac/wama.md
@@ -59,7 +59,7 @@ brain = Claude が読むための前提集。事実と骨格だけ置く。
 
 ### 置き場ルール
 
-- 表記: 社内では会社は「Hello」、パーソナルアシスタントは「Hello Assistant」（略 HA）。消費者向けのサービス名は「Hello」のまま（2026-10-16。2026-09-25 の「Hello, Inc.」/「Hello」の書き分けは廃止）。Hello の aisaac への吸収合併と HA の HelloAI への移管（2026-12 以降予定）の後は、会社は「HelloAI」、プロダクトは「Hello」。HA の呼称はそこで廃止する（2026-10-29。reorg.md「全体像」）
+- 表記: パーソナルアシスタントは社内でも消費者向けでも「Hello」（2026-11-18。10-16 の「Hello Assistant」（略 HA）は廃止）。会社は、今の法人も文脈で分かるときは「Hello」、プロダクトと紛れるときは登記名の「株式会社ハロー」。事業を移す先は「HelloAI」（株式会社HelloAI。reorg.md「全体像」）
 - 特定の会社の話 → その会社のファイル。各会社フォルダの基本ファイル（法人・体制・事業群）は base.md（2026-09-24。サービス名 Hello と衝突させないため）
 - 会社をまたぐ話 → me/me.md。テーマが大きいものは専用ファイル（例: hr.md）
 - 播口個人の話（家族・個人資産）→ me/。会社の話は入れない（H&G は handg/）。出国は再編とタイミングを揃えるので reorg.md（2026-10-24）
@@ -105,7 +105,7 @@ Lead は Fable 5.1、サブは Opus 5.5（2026-10-23 決定。同日の「Lead �
 - 決定は decisions.md に「決めたこと / 却下した案 / 理由」の形で
 - 推測を事実として書かない。確認が必要なものは「要確認」と明記する
 - ファイルを変更したら commit & push。push 前に `git pull --rebase --autostash`
-- helloai/hello-assistant.md を変更したら、commit 後に Notion の「Hello Winning Playbook」（https://app.notion.com/p/3e8644312c5c81f1994dfb5a5f69a3fc、page id 3e8644312c5c81f1994dfb5a5f69a3fc）を notion-update-page の replace_content で全文同期する。内容は hello-assistant.md から先頭の H1 を除いたもの。先頭に「brain の helloai/hello-assistant.md と同期。最終同期: YYYY-MM-DD」の引用行を置く（2026-09-27 設定）
+- helloai/hello.md を変更したら、commit 後に Notion の「Hello Winning Playbook」（https://app.notion.com/p/3e8644312c5c81f1994dfb5a5f69a3fc、page id 3e8644312c5c81f1994dfb5a5f69a3fc）を notion-update-page の replace_content で全文同期する。内容は hello.md から先頭の H1 を除いたもの。先頭に「brain の helloai/hello.md と同期。最終同期: YYYY-MM-DD」の引用行を置く（2026-09-27 設定）
 
 ---
 
