@@ -31,8 +31,9 @@ brain = Claude が読むための前提集。事実と骨格だけ置く。
 - Hello の人材エージェント契約 → hello/hr.md
 - HelloDining（Hello の飲食店向け事業。AutoReserve / Respo）→ hello/hello-dining.md
 - HelloAlpha（Hello のヘッジファンド事業）→ hello/hello-alpha.md
-- Hello Assistant（HA。Hello が出すパーソナルアシスタント。消費者向けのサービス名は Hello）→ hello/hello-assistant.md
 - HelloPay（Hello の決済代行。エージェント決済の仕組み）→ hello/hello-pay.md
+- HelloAI（新設する株式会社HelloAI。立て付けは reorg.md「全体像」）→ helloai/（2026-11-18。Hello Assistant 事業を HelloAI に移すので hello/ から移動）
+  - Hello Assistant（HA。パーソナルアシスタント。消費者向けのサービス名は Hello）→ helloai/hello-assistant.md
 - aisaac → aisaac/base.md
 - aisaac の人材エージェント契約 → aisaac/hr.md
 - aisaac の WAMA BY（ロンドン日本食モール）出資検討 → aisaac/wama.md
@@ -104,7 +105,7 @@ Lead は Fable 5.1、サブは Opus 5.5（2026-10-23 決定。同日の「Lead �
 - 決定は decisions.md に「決めたこと / 却下した案 / 理由」の形で
 - 推測を事実として書かない。確認が必要なものは「要確認」と明記する
 - ファイルを変更したら commit & push。push 前に `git pull --rebase --autostash`
-- hello/hello-assistant.md を変更したら、commit 後に Notion の「Hello Winning Playbook」（https://app.notion.com/p/3e8644312c5c81f1994dfb5a5f69a3fc、page id 3e8644312c5c81f1994dfb5a5f69a3fc）を notion-update-page の replace_content で全文同期する。内容は hello-assistant.md から先頭の H1 を除いたもの。先頭に「brain の hello/hello-assistant.md と同期。最終同期: YYYY-MM-DD」の引用行を置く（2026-09-27 設定）
+- helloai/hello-assistant.md を変更したら、commit 後に Notion の「Hello Winning Playbook」（https://app.notion.com/p/3e8644312c5c81f1994dfb5a5f69a3fc、page id 3e8644312c5c81f1994dfb5a5f69a3fc）を notion-update-page の replace_content で全文同期する。内容は hello-assistant.md から先頭の H1 を除いたもの。先頭に「brain の helloai/hello-assistant.md と同期。最終同期: YYYY-MM-DD」の引用行を置く（2026-09-27 設定）
 
 ---
 
