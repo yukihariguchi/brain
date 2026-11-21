@@ -32,6 +32,7 @@ brain = Claude が読むための前提集。事実と骨格だけ置く。
 - HelloDining（Hello の飲食店向け事業。AutoReserve / Respo）→ hello/hello-dining.md
 - HelloAlpha（Hello のヘッジファンド事業）→ hello/hello-alpha.md
 - HelloPay（Hello の決済代行。エージェント決済の仕組み）→ hello/hello-pay.md
+- HelloFinancial（全世界のフィンテック。SG 本社、当初は aisaac 子会社。HelloPay 事業を持つ）→ hellofinancial/base.md
 - HelloAI（新設する株式会社HelloAI。立て付けは reorg.md「全体像」）→ helloai/（2026-11-18。パーソナルアシスタントの事業を HelloAI に移すので hello/ から移動）
   - Hello（パーソナルアシスタント）→ helloai/hello.md
 - aisaac → aisaac/base.md
