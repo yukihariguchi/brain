@@ -35,6 +35,7 @@ brain = Claude が読むための前提集。事実と骨格だけ置く。
 - HelloFinancial（全世界のフィンテック。SG 本社、当初は aisaac 子会社。HelloPay 事業を持つ）→ hellofinancial/base.md
 - HelloAI（新設する株式会社HelloAI。立て付けは reorg.md「全体像」）→ helloai/（2026-11-18。パーソナルアシスタントの事業を HelloAI に移すので hello/ から移動）
   - Hello（パーソナルアシスタント）→ helloai/hello.md
+  - Hello の課金と原価（プラン・原価の試算）→ helloai/pricing.md
 - aisaac → aisaac/base.md
 - aisaac の人材エージェント契約 → aisaac/hr.md
 - aisaac の WAMA BY（ロンドン日本食モール）出資検討 → aisaac/wama.md
